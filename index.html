@@ -6,32 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
     <meta name="description" content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fuente montserrat semi bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fuente montserrat bold italic -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+
     <title>PAC Nodo Zona Sur</title>
 </head>
 <body>
     <header>
-        <!--Logo al extremo izquierdo-->
-        <a href="index.html">
-            <img src="img/logoPac.png" alt="Logo de PAC">
-        </a>
-       
+        <!-- titulo -->
+        <h1>PRODUCTORES A CONSUMIDORES NODO ZONA SUR</h1>
+
         <!--Navegación-->
-        <nav>
-            <ul>
+        <nav class="navegacion-top">
+            <!--Logo al extremo izquierdo-->
+            <a href="index.html">
+            <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
+            </a>
+       
+            <ul class="menu">
                 <li>
-                    <a href="1nosotros.html">Nosotros</a>
+                    <a class="enlace-texto" href="1nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="2nuestrosProductos.html">Nuestros Productos</a>
+                    <a class="enlace-texto" href="2nuestrosProductos.html">Nuestros Productos</a>
                 </li>
                 <li>
-                    <a href="3economiPopular.html">Economía Popular</a>
+                    <a class="enlace-texto" href="3economiPopular.html">Economía Popular</a>
                 </li>
                 <li>
-                    <a href="4ambientalismoPopular.html">Ambientalismo Popular</a>
+                    <a class="enlace-texto" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
                 </li>
                 <li>
-                    <a href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
+                    <a class="enlace-texto" href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
                 </li>
             </ul>
         </nav>
@@ -40,22 +55,22 @@
     <!--linea divisoria-->
     <hr>
     
-    <!--Banner novedades principales.La img tendría que ir de fondo pero aún no sabria ponerlo así. Y la imagen del banner cambiar cada x tiempo junto con el contenido en texto, transiciones de "ultima noticia" a "ultima noticia" (3 últmias novedades)-->
+    <!--Banner novedades principales.La img tendría que ir de fondo pero aún no sabria ponerlo así. Y la imagen del banner cambiar cada x tiempo junto con el contenido en enlace-texto, transiciones de "ultima noticia" a "ultima noticia" (3 últmias novedades)-->
     <section>
         <!--Última novedad 1-->
-        <img src="img/ultima-noticia1.jpg" alt="imagen de la ultima noticia 1"> <!--uso colores solidos de img por que todavía no tengo las defintivas-->
+        <img class="imagen-ultimas-nov" src="img/ultima-noticia1.jpg" alt="imagen de la ultima noticia 1"> <!--uso colores solidos de img por que todavía no tengo las defintivas-->
         <h2>Últimas Novedades</h2>
         <h3>22 de abril</h3>
         <p>Hoy 22 de abril se conmemora el Día de la Tierra</p>
 
         <!--Última Novedad 2-->
-        <img src="img/ultima-noticia2.jpg" alt="imagen de la ultima noticia 2">
+        <img class="imagen-ultimas-nov" src="img/ultima-noticia2.jpg" alt="imagen de la ultima noticia 2">
         <h2>Últimas Novedades</h2>
         <h3>17 de abril</h3>
         <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
 
         <!--Última Novedad 3-->
-        <img src="img/ultima-noticia3.jpg" alt="imagen de la ultima noticia 3">
+        <img class="imagen-ultimas-nov" src="img/ultima-noticia3.jpg" alt="imagen de la ultima noticia 3">
         <h2>Últimas Novedades</h2>
         <h3>Todo Bolsón es político</h3>
         <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y desde Nodo PAC Zonasur intentamos aportar nuestro granito de arena para una vida más saludable.</p>
@@ -67,35 +82,35 @@
     <!--Sección de Novedades Generales-->
     <section>
         <!--Novedades 1-->
-        <img src="img/22-de-abril.jpg" alt="imagen noticia 1">
+        <img class="imagen-novedades" src="img/22-de-abril.jpg" alt="imagen noticia 1">
         <h3>22 de abril</h3>
         <p>Hoy 22 de abril se conmemora el día de la Tierra</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
         <!--Novedades 2-->
-        <img src="img/17-de-abril.jpg" alt="imagen noticia 2">
+        <img class="imagen-novedades" src="img/17-de-abril.jpg" alt="imagen noticia 2">
         <h3>17 de abril</h3>
         <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
         <!--Novedades 3-->
-        <img src="img/nuestros-productos.jpg" alt="imagen noticia 3">
+        <img class="imagen-novedades" src="img/nuestros-productos.jpg" alt="imagen noticia 3">
         <h3>Conoce más productctos</h3>
         <p>Yerba de 1 kg $250; Miel de 1/2 ($280) y 1 kg ($390) 🍯; ...</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
         <!--Novedades 4-->
-        <img src="img/estacion-otono.jpg" alt="imagen noticia 4">
+        <img class="imagen-novedades" src="img/estacion-otono.jpg" alt="imagen noticia 4">
         <h3>Temporada de Otoño</h3>
         <p>Hoy te compartimos un listado con las variedades de verdura ...</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
         <!--Novedades 5-->
-        <img src="img/7-de-abril.jpg" alt="imagen noticia 5">
+        <img class="imagen-novedades" src="img/7-de-abril.jpg" alt="imagen noticia 5">
         <h3>Todo Bolsón es Político</h3>
         <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y ...</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
         <!--Novedades 6-->
-        <img src="img/historias-de-compañeras.jpg" alt="Imagen noticia 6">
+        <img class="imagen-novedades" src="img/historias-de-compañeras.jpg" alt="Imagen noticia 6">
         <h3>Vivencias de Compañeras</h3>
         <p>Saberes y experiencias en dialogo, trabajando la tierra y construyendo soberanía ...</p>
-        <a href="#">Leer más</a>
+        <a class="enlace-texto" href="#">Leer más</a>
     </section>
 
     <!--linea divisoria-->
@@ -103,14 +118,14 @@
 
     <footer>
         <!--Instagram-->
-        <img src="img/instagram-logo.png" alt="Logo de Instagram">
-        <a href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
+        <img class="icono-pie" src="img/instagram-logo.png" alt="Logo de Instagram">
+        <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
         <!--Facebook-->
-        <img src="img/facebook-logo.png" alt="Logo de Facebook">
-        <a href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
+        <img class="icono-pie" src="img/facebook-logo.png" alt="Logo de Facebook">
+        <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
         <!--Whatsapp-->
-        <img src="img/whatsapp-logo.png" alt="Logo Whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
+        <img class="icono-pie" src="img/whatsapp-logo.png" alt="Logo Whatsapp">
+        <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
 
         <h2>De Productores a Consumidores Nodo Zona Sur 2021</h2>
         <h3>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</h3>
