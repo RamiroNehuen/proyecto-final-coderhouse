@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
-    <meta name="description" content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+    <meta name="description"
+        content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -14,27 +16,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-    <!-- fuente montserrat bold italic -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
-
     <title>PAC Nodo Zona Sur</title>
 </head>
+
 <body>
     <header>
         <!-- titulo -->
         <h1>PRODUCTORES A CONSUMIDORES NODO ZONA SUR</h1>
 
         <!--Navegación-->
-        <nav class="navegacion-top">
+        <nav class="navegacion-container">
             <!--Logo al extremo izquierdo-->
             <a href="index.html">
-            <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
+                <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
             </a>
-       
+
             <ul class="menu">
                 <li>
                     <a class="enlace-texto" href="1nosotros.html">Nosotros</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="1nosotros.html#contacto">Cotacto</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="2nuestrosProductos.html">Nuestros Productos</a>
@@ -44,6 +48,11 @@
                 </li>
                 <li>
                     <a class="enlace-texto" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="4ambientalismoPopular.html#laudato-si">Enciclica Laudato Si</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
@@ -51,70 +60,108 @@
             </ul>
         </nav>
     </header>
-    
+
     <!--linea divisoria-->
-    <hr>
-    
-    <!--Banner novedades principales.La img tendría que ir de fondo pero aún no sabria ponerlo así. Y la imagen del banner cambiar cada x tiempo junto con el contenido en enlace-texto, transiciones de "ultima noticia" a "ultima noticia" (3 últmias novedades)-->
+    <hr class="lineaNav">
+
+    <!-- ---------------------------------ultimas novedades---------------------------------------- -->
     <section>
-        <!--Última novedad 1-->
-        <img class="imagen-ultimas-nov" src="img/ultima-noticia1.jpg" alt="imagen de la ultima noticia 1"> <!--uso colores solidos de img por que todavía no tengo las defintivas-->
-        <h2>Últimas Novedades</h2>
-        <h3>22 de abril</h3>
-        <p>Hoy 22 de abril se conmemora el Día de la Tierra</p>
-
-        <!--Última Novedad 2-->
-        <img class="imagen-ultimas-nov" src="img/ultima-noticia2.jpg" alt="imagen de la ultima noticia 2">
-        <h2>Últimas Novedades</h2>
-        <h3>17 de abril</h3>
-        <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
-
-        <!--Última Novedad 3-->
-        <img class="imagen-ultimas-nov" src="img/ultima-noticia3.jpg" alt="imagen de la ultima noticia 3">
-        <h2>Últimas Novedades</h2>
-        <h3>Todo Bolsón es político</h3>
-        <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y desde Nodo PAC Zonasur intentamos aportar nuestro granito de arena para una vida más saludable.</p>
+        <div class="ultimas-novedades1">
+            <!--Última novedad 1-->
+            <img class="imagen-ultimas-nov" src="img/ultima-noticia1.jpg" alt="imagen de la ultima noticia 1">
+            <!--uso colores solidos de img por que todavía no tengo las defintivas-->
+            <div class="ultimas-novedades1-texto">
+                <h2>Últimas Novedades</h2>
+                <h3>22 de abril</h3>
+                <p>Hoy 22 de abril se conmemora el Día de la Tierra</p>
+            </div>
+        </div>
+        <div class="ultimas-novedades2">
+            <!--Última Novedad 2-->
+            <img class="imagen-ultimas-nov" src="img/ultima-noticia2.jpg" alt="imagen de la ultima noticia 2">
+            <div class="ultimas-novedades2-texto">
+                <h2>Últimas Novedades</h2>
+                <h3>17 de abril</h3>
+                <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
+            </div>
+        </div>
+        <div class="ultimas-novedades3">
+            <!--Última Novedad 3-->
+            <img class="imagen-ultimas-nov" src="img/ultima-noticia3.jpg" alt="imagen de la ultima noticia 3">
+            <div class="ultimas-novedades3-texto">
+                <h2>Últimas Novedades</h2>
+                <h3>Todo Bolsón es político</h3>
+                <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y desde Nodo PAC Zonasur intentamos
+                    aportarnuestro granito de arena para una vida más saludable.</p>
+            </div>
+        </div>
     </section>
-    
-    <!--linea divisoria-->
-    <hr>
-
-    <!--Sección de Novedades Generales-->
-    <section>
-        <!--Novedades 1-->
-        <img class="imagen-novedades" src="img/22-de-abril.jpg" alt="imagen noticia 1">
-        <h3>22 de abril</h3>
-        <p>Hoy 22 de abril se conmemora el día de la Tierra</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-        <!--Novedades 2-->
-        <img class="imagen-novedades" src="img/17-de-abril.jpg" alt="imagen noticia 2">
-        <h3>17 de abril</h3>
-        <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-        <!--Novedades 3-->
-        <img class="imagen-novedades" src="img/nuestros-productos.jpg" alt="imagen noticia 3">
-        <h3>Conoce más productctos</h3>
-        <p>Yerba de 1 kg $250; Miel de 1/2 ($280) y 1 kg ($390) 🍯; ...</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-        <!--Novedades 4-->
-        <img class="imagen-novedades" src="img/estacion-otono.jpg" alt="imagen noticia 4">
-        <h3>Temporada de Otoño</h3>
-        <p>Hoy te compartimos un listado con las variedades de verdura ...</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-        <!--Novedades 5-->
-        <img class="imagen-novedades" src="img/7-de-abril.jpg" alt="imagen noticia 5">
-        <h3>Todo Bolsón es Político</h3>
-        <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y ...</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-        <!--Novedades 6-->
-        <img class="imagen-novedades" src="img/historias-de-compañeras.jpg" alt="Imagen noticia 6">
-        <h3>Vivencias de Compañeras</h3>
-        <p>Saberes y experiencias en dialogo, trabajando la tierra y construyendo soberanía ...</p>
-        <a class="enlace-texto" href="#">Leer más</a>
-    </section>
+    <!-- -----------------------------FIN SECCION ULTIMAS NOVEDADES ------------------------------------------- -->
 
     <!--linea divisoria-->
-    <hr>
+    <hr class="lineaSeccion">
+
+    <!-- ------------------------Sección de Novedades Generales 1----------------------------------------->
+    <section class="novedades1">
+
+        <div class="novedades-contenedor1">
+
+            <div class="Novedad1">
+                <!--Novedades 1-->
+                <img class="imagen-novedades" src="img/22-de-abril.jpg" alt="imagen noticia 1">
+                <h3>22 de abril</h3>
+                <p>Hoy 22 de abril se conmemora el día de la Tierra</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+
+            <div class="Novedad2">
+                <!--Novedades 2-->
+                <img class="imagen-novedades" src="img/17-de-abril.jpg" alt="imagen noticia 2">
+                <h3>17 de abril</h3>
+                <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+            <div class="Novedad3">
+                <!--Novedades 3-->
+                <img class="imagen-novedades" src="img/nuestros-productos.jpg" alt="imagen noticia 3">
+                <h3>Conoce más productctos</h3>
+                <p>Yerba de 1 kg $250; Miel de 1/2 ($280) y 1 kg ($390) 🍯; ...</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+    </section>
+    <!-- ---------------------- Fin Seccion de Novedades Generales 1 ------------------------------- -->
+
+    <!-- --------------------------------Sección Novedades Generales 2------------------------------------- -->
+    <section class="novedades2">
+        <div class="novedades-contenedor2">
+            <div class="Novedad4">
+                <!--Novedades 4-->
+                <img class="imagen-novedades" src="img/estacion-otono.jpg" alt="imagen noticia 4">
+                <h3>Temporada de Otoño</h3>
+                <p>Hoy te compartimos un listado con las variedades de verdura ...</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+            <div class="Novedad5">
+                <!--Novedades 5-->
+                <img class="imagen-novedades" src="img/7-de-abril.jpg" alt="imagen noticia 5">
+                <h3>Todo Bolsón es Político</h3>
+                <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y ...</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+            <div class="Novedad6">
+                <!--Novedades 6-->
+                <img class="imagen-novedades" src="img/historias-de-compañeras.jpg" alt="Imagen noticia 6">
+                <h3>Vivencias de Compañeras</h3>
+                <p>Saberes y experiencias en dialogo, trabajando la tierra y construyendo soberanía ...</p>
+                <a class="enlace-texto" href="#">Leer más</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ---------------------------Fin sección Novedades Generales 2----------------------------------- -->
+
+    <!--linea divisoria-->
+    <hr class="lineaSeccion">
 
     <footer>
         <!--Instagram-->
@@ -132,4 +179,5 @@
 
     </footer>
 </body>
+
 </html>

@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
-    <meta name="description" content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+    <meta name="description"
+        content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- fuente montserrat semi bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <title>PAC Próxima Entrega</title>
 </head>
+
 <body>
     <header>
 
@@ -19,7 +26,7 @@
         <h1>PRODUCTORES A CONSUMIDORES NODO ZONA SUR</h1>
 
         <!--Navegación-->
-        <nav class="navegacion-top">
+        <nav class="navegacion-container">
             <!--Logo al extremo izquierdo-->
             <a href="index.html">
                 <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
@@ -28,6 +35,11 @@
             <ul class="menu">
                 <li>
                     <a class="enlace-texto" href="1nosotros.html">Nosotros</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="1nosotros.html#contacto">Cotacto</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="2nuestrosProductos.html">Nuestros Productos</a>
@@ -37,6 +49,12 @@
                 </li>
                 <li>
                     <a class="enlace-texto" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="4ambientalismoPopular.html#laudato-si">Enciclica Laudato
+                                Si</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
@@ -45,25 +63,26 @@
         </nav>
     </header>
     <!--linea divisoria-->
-    <hr>
+    <hr class="lineaNav">
 
     <!-- proxima entrega y fecha -->
     <section>
-        <h2>PROXIMA ENTREGA - XX/XX/XXXX</h2>
-        <p>Este sábado (XX/XX/XXXX) vamos a estar haciendo el reparto de PAC! Como habitualmente, entre las 12 y 16 horas vamos a estar entregando los pedidos.</p>
-        <p>Si elegiste retirarlo por la Casa Popular (Antonio Saenz 317, Lomas de Zamora) recordá pasar entre las 11.30 hs y las 13 hs. Muchas gracias!</p>
+        <h2>PROXIMA ENTREGA XX XX XXXX</h2>
+        <p>Este sábado (XX/XX/XXXX) vamos a estar haciendo el reparto de PAC! Como habitualmente, entre las 12 y 16
+            horas vamos a estar entregando los pedidos.</p>
+        <p>Si elegiste retirarlo por la Casa Popular (Antonio Saenz 317, Lomas de Zamora) recordá pasar entre las 11.30
+            hs y las 13 hs. Muchas gracias!</p>
     </section>
 
-    <section>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8JwHbIlvMA5Lx72yZbPX5vpv8J_PCfnhXCSUt4JLjfQGrGQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <section class="formulario">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc8JwHbIlvMA5Lx72yZbPX5vpv8J_PCfnhXCSUt4JLjfQGrGQ/viewform?embedded=true"
+            width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
     </section>
-    
-
-
-
 
     <!--linea divisoria-->
-    <hr>
+    <hr class="lineaSeccion">
+
     <footer>
         <!--Instagram-->
         <img class="icono-pie" src="img/instagram-logo.png" alt="Logo de Instagram">
@@ -80,4 +99,5 @@
 
     </footer>
 </body>
+
 </html>

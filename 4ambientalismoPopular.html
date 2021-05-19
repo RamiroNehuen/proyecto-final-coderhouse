@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
-    <meta name="description" content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+    <meta name="description"
+        content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- fuente montserrat semi bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <title>PAC Ambientalismo Popular</title>
 </head>
+
 <body>
     <header>
 
         <!-- titulo -->
         <h1>PRODUCTORES A CONSUMIDORES NODO ZONA SUR</h1>
 
-        <!--Logo al extremo izquierdo-->
-        <a href="index.html">
-            <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
-        </a>
-       
-       <!--Navegación-->
-       <nav class="navegacion-top">
+        <!--Navegación-->
+        <nav class="navegacion-container">
             <!--Logo al extremo izquierdo-->
             <a href="index.html">
-            <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
+                <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
             </a>
-            
+
             <ul class="menu">
                 <li>
                     <a class="enlace-texto" href="1nosotros.html">Nosotros</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="1nosotros.html#contacto">Cotacto</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="2nuestrosProductos.html">Nuestros Productos</a>
@@ -42,6 +49,12 @@
                 </li>
                 <li>
                     <a class="enlace-texto" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
+                    <ul>
+                        <li>
+                            <a class="enlace-texto" href="4ambientalismoPopular.html#laudato-si">Enciclica Laudato
+                                Si</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="enlace-texto" href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
@@ -50,29 +63,43 @@
         </nav>
     </header>
     <!--linea divisoria-->
-    <hr>
+    <hr class="lineaNav">
 
     <h2>AMBIENTALISMO POPULAR</h2>
 
     <!-- video sobre modelos productivos -->
     <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JGXOkT-407M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JGXOkT-407M" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </section>
 
     <!-- definicion de ambientalismo popular -->
     <section>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laboriosam. Odio explicabo error repudiandae consequatur facilis itaque et atque perferendis ea incidunt eum necessitatibus deserunt illum adipisci nihil quibusdam perspiciatis, sed laboriosam sint facere, quo vel nemo minus unde! Quod ipsam optio soluta itaque nostrum blanditiis non quasi, molestias ea! Natus provident officiis sapiente culpa quidem facere illum, quas explicabo reiciendis accusamus exercitationem! Illum, numquam repellat possimus perferendis, aliquam tempore natus ab ut blanditiis at cupiditate laboriosam officia cumque ad dicta nobis architecto, porro ipsam exercitationem? Atque voluptas voluptatum autem modi perferendis repellendus neque dicta quia sequi, necessitatibus fugiat voluptatem ipsam quidem facilis sit omnis rerum facere, sed adipisci. Aliquam eum eaque iure fugit deserunt cum ipsa itaque libero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nemo laboriosam. Odio explicabo error
+            repudiandae consequatur facilis itaque et atque perferendis ea incidunt eum necessitatibus deserunt illum
+            adipisci nihil quibusdam perspiciatis, sed laboriosam sint facere, quo vel nemo minus unde! Quod ipsam optio
+            soluta itaque nostrum blanditiis non quasi, molestias ea! Natus provident officiis sapiente culpa quidem
+            facere illum, quas explicabo reiciendis accusamus exercitationem! Illum, numquam repellat possimus
+            perferendis, aliquam tempore natus ab ut blanditiis at cupiditate laboriosam officia cumque ad dicta nobis
+            architecto, porro ipsam exercitationem? Atque voluptas voluptatum autem modi perferendis repellendus neque
+            dicta quia sequi, necessitatibus fugiat voluptatem ipsam quidem facilis sit omnis rerum facere, sed
+            adipisci. Aliquam eum eaque iure fugit deserunt cum ipsa itaque libero!
         </p>
 
         <!-- link a la enciclica papal laudato si -->
-        <a href="http://www.vatican.va/content/francesco/es/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html">Enciclica Papal, Laudato Si</a>
+        <div id="laudato-si">
+            <a class="enlace-texto"
+                href="http://www.vatican.va/content/francesco/es/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html">Enciclica
+                Papal, Laudato Si</a>
+        </div>
     </section>
-    
-
 
     <!--linea divisoria-->
-    <hr>
+    <hr class="lineaSeccion">
+
     <footer>
         <!--Instagram-->
         <img class="icono-pie" src="img/instagram-logo.png" alt="Logo de Instagram">
@@ -89,4 +116,5 @@
 
     </footer>
 </body>
+
 </html>
