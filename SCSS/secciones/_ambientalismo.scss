@@ -1,0 +1,52 @@
+@import '../components/color-list';
+@import '../components/mixin-extend';
+@import '../components/queries';
+
+/* ESTILOS SECCIÓN AMBIENTALISMO POPULAR */
+
+.ambientalismo-container {
+    background-image: url(../../img/fondos/ambientalismo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 3rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        iframe {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 2rem;
+            font-size: 1.25rem;
+        }
+
+        .laudato-si {
+            a {
+                font-size: 1.40rem;
+                margin-left: 1rem;
+                font-weight: bolder;
+                border: nth($colores, 2) 3px solid;
+                padding: .3rem;
+
+                &:hover {
+                    @include condition(3px);
+                }
+            }
+        }
+    }
+
+}
+
+/*FIN ESTILOS SECCIÓN ECONOMÍA POPULAR*/

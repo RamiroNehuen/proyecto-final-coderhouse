@@ -1,0 +1,41 @@
+@import '../components/color-list';
+@import '../components/queries';
+
+/*ESTILOS INDEX*/
+/* VIDEO FONDO */
+.index-container {
+    background-color: nth($colores, 5);
+    background-image: none;
+
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity: .4;
+    }
+}
+
+/*FIN VIDEO DE FONDO*/
+
+.titulo-logo-index {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+
+    div {
+        margin-bottom: 1.25rem;
+
+        h1,
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* FIN ESTILOS INDEX*/

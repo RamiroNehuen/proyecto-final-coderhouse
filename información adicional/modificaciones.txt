@@ -1,0 +1,84 @@
+Entrega lunes 24/5/2021:
+
+- Realicé algunas modificaciones relativas a los comentarios y orden del código.-
+
+- Utilicé flex para dar estilo a la seccion de noticias generales del index y a la sección Ramas de la Economía Popular.-
+
+---------------------------------------------------------------------------------
+
+Entrega miercoles 26/5/2021:
+
+- Ordené las secciones en carpetas.-
+
+- Apliqué Grid al footer (todas las secciones).-
+
+- Index responsive optiminzado para tres tamaños: por defecto (grande), mediano y pequeño.-
+
+Entrega Miercoles 2/6/2021:
+
+- Hice un nuevo index.-
+
+- Ordené las imágenes en carpetas.-
+
+- Cambié los fondos de cada sección.-
+
+- Incorporé animaciones al index y las secciones.-
+----------------------------------------------------------------------------------
+
+Entrega Lunes 7/6/2021:
+
+- Incorporé bootstrap para el carusel en la sección noticias.-
+
+- Cambie en la sección de Nuestros Productos, la tabla que había hecho por cards de bootstrap, más animaciones AOS (voy a darle una vuelta de
+ rosca más a esta parte), incluí conceptos de grid system responsive con bootstrap.-
+
+- Incorporé navbar responsive de bootstrap en todas las secciones (menos el index que quiero probar alguna cosita más).-
+
+- Corregí conforme me indicaste en la parte de contacto para que en nro telefónico solo se puedan ingresar números.-
+
+- Espero que estes pudiendo ver bien el nuevo index (que ya esta desde la entrega anterior) con el video de fondo que le puse y no solo con un 
+fondo solido negro. Por que si abro la página en el navegador común no se reproduce bien. Pero si funcioná todo perfecto cuando abro el proyecto 
+con la opción Live Server.-
+
+------------------------------------------------------------------
+
+Entrega miercoles 9/6/2021:
+
+- Los objetivos de esta entrega los incluí en la anterior también hasta donde entendí en realidad, a saber: 
+    a) Incluye uno o más componentes de Bootstrap con JavaScript: 
+        incluí el carrusel y el navbar con dropdown al que para esta entrega le agrego una modificación en realidad; 
+    b) Utiliza media queries o Bootstrap para adaptar a mobile una página de tu sitio: 
+        Las apliqué en la página Nuestros Productos.-
+
+- Le quite la parte naranja a las tarjetas de productos y les agregue un pequeño zoom con hover.-
+
+- Agregue background color a en la seccion Noticias y Economía Popular a a los las partes de texto que van con las fotitos y un pequeño zoom con
+ hover.-
+
+---------------------------------------------------------------------
+
+Entrega Lunes 14/6/2021:
+
+- Cree y compile el archivo sass.-
+
+- Cree una estructura de archivos sass adaptada a mi proyecyo y mirguré todo mi css.-
+
+- Inlcuí concepto de Nesting y una Lista de colores.-
+
+-----------------------------------------------------------------------
+
+Entrega miercoles 16/6/2021:
+
+- Hice correcciones al Index que había quedado con errores al usar la navbar de bootstrap.-
+
+- Modifique las "tarjetas" de la seccion Noticias y Economía Popular.-
+
+- Le di estilo a los hr que habían quedado sin estilos cuando pase todo a SASS.-
+
+- Agregue un efecto gradiente cuando hover al navbar (me temo que haya quedado medio cambalachero).-
+
+- Agregue los query que me habían faltado en mi migración general de CSS a SASS.-
+
+- Una primera parte del desafio obligatorio para este día estaba cumplido, pues había migrado todo mi CSS a SASS. Sume ahora mixin (sección 
+noticias, con más de 2 parametros), extend (sección economía popular), una condición con mixin (sección Ambientalismo Popular), un mapa y por
+último como aclare más arriba queries (todas las secciones a pantalla pequeña, aunque todavía estoy teniendo algunos problemas).-

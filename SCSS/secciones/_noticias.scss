@@ -1,0 +1,83 @@
+@import '../components/color-list';
+@import '../components/mixin-extend';
+@import '../components/queries';
+
+/*ESTILOS SECCION NOTICIAS*/
+.noticias-container {
+    background-image: url(../../img/fondos/noticias.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    h2,
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+/* Estilos Novedades Generales */
+
+.novedades-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    div {
+        display: flex;
+        margin: 3% 0;
+        align-items: center;
+
+
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+
+            div {
+                background-color: nth($colores, 3);
+
+                div {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+            }
+
+        }
+
+        img {
+            width: 12.5rem;
+            height: 12.5rem;
+        }
+
+        div {
+            @include tarjeta(nth($colores, 4), 3%, 5px);
+
+            &:hover {
+                transform: scale(1.1)
+            }
+
+            div {
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0);
+
+                p {
+                    text-align: justify;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
+                h4 {
+                    text-align: center;
+                }
+            }
+
+
+        }
+    }
+}
+
+/* Fin estilos Novedades Generales */
+
+/*FIN ESTILOS SECCION NOTICIAS*/

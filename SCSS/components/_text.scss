@@ -1,0 +1,61 @@
+@import '../components/color-list';
+@import '../components/queries';
+@import '../components/mapa';
+
+/* FUENTE, TITULOS, SUBTITULOS, PARRAFOS */
+@font-face {
+    font-family: pantonRust;
+    src: url(../../font/PantonRustHeavy-GrSh.otf);
+}
+
+@font-face {
+    font-family: montserratItalicBold;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: nth($colores, 2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: map-get($map, font-family);
+    letter-spacing: map-get($map, letter-spacing);
+    color: nth($colores, 2);
+}
+
+/* FIN FUENTES, TITULOS, SUBTITULOS, PARRAFOS */
+
+/* ESTILOS ENLACES DE TEXTO */
+.enlace-texto {
+    color: nth($colores, 2);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+    &:hover,
+    &:focus {
+        background-size: 100% 2px;
+        color: nth($colores, 2);
+    }
+
+}
+
+/* FIN ESTILOS ENLACES DE TEXTO */
+
+/*DIVOSOR ENTRE SECCIONES*/
+hr {
+    margin: map-get($map, margin);
+    background-color: nth($colores, 2);
+}
+
+/*FIN DIVISOR ENTRE SECCIONES*/

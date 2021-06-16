@@ -1,0 +1,39 @@
+@import '../components/color-list';
+
+
+// UN MAXIN, CONDICION CON MAXIN Y EXTEND PARA APLICAR LO VISTO EN CLASE
+@mixin tarjeta($color, $mr, $br) {
+    flex-basis: 60%;
+    margin: 0 $mr;
+    font-size: 1rem;
+    background-color: $color;
+    border-radius: $br;
+    padding: 2%;
+    transition: transform 1s;
+}
+
+// INCLUIDO EN LA SECCIÓN NOTICIAS
+
+%tarjeta-ep {
+    flex-basis: 60%;
+    margin: 0 3%;
+    font-size: 1rem;
+    background-color: nth($colores, 4);
+    border-radius: 5px;
+    padding: 2%;
+    transition: transform 1s;
+}
+
+
+@mixin condition ($border) {
+    border: nth($colores, 2) $border solid;
+
+    @if $border==3px {
+        background: rgb(114, 51, 155);
+        background: linear-gradient(90deg, rgba(114, 51, 155, 1) 0%, rgba(0, 179, 71, 1) 44%, rgba(242, 101, 45, 1) 100%);
+    }
+
+    @else {
+        background-color: nth($colores, 1);
+    }
+}

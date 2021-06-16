@@ -1,0 +1,40 @@
+@import '../components/color-list';
+@import '../components/queries';
+
+/*ESTILOS SECCIÓN NUESTROS PRODUCTOS*/
+
+.productos-container {
+    background-image: url(../../img/fondos/nuestros-productos.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    section {
+        div {
+            div {
+                h2 {
+                    font-size: 3rem;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0);
+            transition: transform 1s;
+
+            &:hover {
+                transform: scale(1.1)
+            }
+
+            .card-body {
+                background-color: nth($colores, 4);
+            }
+        }
+    }
+
+}
+
+/*FIN ESTILO SECCION NUESTROS PRODUCTOS*/

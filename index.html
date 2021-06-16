@@ -2,182 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
-    <meta name="description"
-        content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- fuente montserrat semi bold-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>PAC Nodo Zona Sur</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- fuente montserrat semi bold-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <title>PAC Nodo Zona Sur</title>
 </head>
 
-<body>
-    <header>
-        <!-- titulo -->
-        <h1>PRODUCTORES A CONSUMIDORES NODO ZONA SUR</h1>
+<body class="index-container">
+  <header>
+    <!-- TITULO Y LOGO -->
+    <div class="titulo-logo-index" data-aos="zoom-in" data-aos-duration="1500">
+      <div>
+        <h1>PRODUCTORES A CONSUMIDORES</h1>
+        <h2>NODO ZONA SUR</h2>
+      </div>
+      <a href="index.html">
+        <img src="img/logos/logoPac.png" alt="Logo de PAC">
+      </a>
+    </div>
+    <!-- FIN TITULO Y LOGO -->
+  </header>
 
-        <!--Navegación-->
-        <nav class="navegacion-container">
-            <!--Logo al extremo izquierdo-->
-            <a href="index.html">
-                <img class="logo-pac" src="img/logoPac.png" alt="Logo de PAC">
-            </a>
-
-            <ul class="menu">
-                <li>
-                    <a class="enlace-texto" href="1nosotros.html">Nosotros</a>
-                    <ul>
-                        <li>
-                            <a class="enlace-texto" href="1nosotros.html#contacto">Cotacto</a>
-                        </li>
-                    </ul>
+  <!-- NAVEGACIÓN -->
+  <div class="d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1500">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo-pac" src="img/logos/logoPac.png" alt="Logo de PAC">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="secciones/0noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="1nosotros.html" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-white" href="secciones/1nosotros.html">Sección</a></li>
+                <li><a class="dropdown-item text-white" href="secciones/1nosotros.html#contacto">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="secciones/2nuestrosProductos.html">Nuestros Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="4ambientalismoPopular.html"
+                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Economía Popular
+              </a>
+              <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-white" href="3economiPopular.html">General</a></li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#rural"></a>Rural</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#cartoneros"></a>Cartoneros</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#construccion"></a>Construccion</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#textil"></a>Textil</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#liberados"></a>Liberados</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#mujeres"></a>Mujeres</li>
+                <li><a class="dropdown-item text-white" href="3economiPopular.html#comunitaria"></a>Socio Comunitaria
                 </li>
-                <li>
-                    <a class="enlace-texto" href="2nuestrosProductos.html">Nuestros Productos</a>
-                </li>
-                <li>
-                    <a class="enlace-texto" href="3economiPopular.html">Economía Popular</a>
-                </li>
-                <li>
-                    <a class="enlace-texto" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
-                    <ul>
-                        <li>
-                            <a class="enlace-texto" href="4ambientalismoPopular.html#laudato-si">Enciclica Laudato Si</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="enlace-texto" href="5proximaEntrega.html">Próxima Entrega (formulario)</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--linea divisoria-->
-    <hr class="lineaNav">
-
-    <!-- ---------------------------------ultimas novedades---------------------------------------- -->
-    <section>
-        <div class="ultimas-novedades1">
-            <!--Última novedad 1-->
-            <img class="imagen-ultimas-nov" src="img/ultima-noticia1.jpg" alt="imagen de la ultima noticia 1">
-            <!--uso colores solidos de img por que todavía no tengo las defintivas-->
-            <div class="ultimas-novedades1-texto">
-                <h2>Últimas Novedades</h2>
-                <h3>22 de abril</h3>
-                <p>Hoy 22 de abril se conmemora el Día de la Tierra</p>
-            </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="secciones/5proximaEntrega.html">Próxima Entrega</a>
+            </li>
+          </ul>
         </div>
-        <div class="ultimas-novedades2">
-            <!--Última Novedad 2-->
-            <img class="imagen-ultimas-nov" src="img/ultima-noticia2.jpg" alt="imagen de la ultima noticia 2">
-            <div class="ultimas-novedades2-texto">
-                <h2>Últimas Novedades</h2>
-                <h3>17 de abril</h3>
-                <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
-            </div>
-        </div>
-        <div class="ultimas-novedades3">
-            <!--Última Novedad 3-->
-            <img class="imagen-ultimas-nov" src="img/ultima-noticia3.jpg" alt="imagen de la ultima noticia 3">
-            <div class="ultimas-novedades3-texto">
-                <h2>Últimas Novedades</h2>
-                <h3>Todo Bolsón es político</h3>
-                <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y desde Nodo PAC Zonasur intentamos
-                    aportarnuestro granito de arena para una vida más saludable.</p>
-            </div>
-        </div>
-    </section>
-    <!-- -----------------------------FIN SECCION ULTIMAS NOVEDADES ------------------------------------------- -->
+      </div>
+    </nav>
+  </div>
+  <!-- FIN NAVEGACION -->
 
-    <!--linea divisoria-->
-    <hr class="lineaSeccion">
+  <hr class="mt-5">
 
-    <!-- ------------------------Sección de Novedades Generales 1----------------------------------------->
-    <section class="novedades1">
-
-        <div class="novedades-contenedor1">
-
-            <div class="Novedad1">
-                <!--Novedades 1-->
-                <img class="imagen-novedades" src="img/22-de-abril.jpg" alt="imagen noticia 1">
-                <h3>22 de abril</h3>
-                <p>Hoy 22 de abril se conmemora el día de la Tierra</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-
-            <div class="Novedad2">
-                <!--Novedades 2-->
-                <img class="imagen-novedades" src="img/17-de-abril.jpg" alt="imagen noticia 2">
-                <h3>17 de abril</h3>
-                <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-            <div class="Novedad3">
-                <!--Novedades 3-->
-                <img class="imagen-novedades" src="img/nuestros-productos.jpg" alt="imagen noticia 3">
-                <h3>Conoce más productctos</h3>
-                <p>Yerba de 1 kg $250; Miel de 1/2 ($280) y 1 kg ($390) 🍯; ...</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-    </section>
-    <!-- ---------------------- Fin Seccion de Novedades Generales 1 ------------------------------- -->
-
-    <!-- --------------------------------Sección Novedades Generales 2------------------------------------- -->
-    <section class="novedades2">
-        <div class="novedades-contenedor2">
-            <div class="Novedad4">
-                <!--Novedades 4-->
-                <img class="imagen-novedades" src="img/estacion-otono.jpg" alt="imagen noticia 4">
-                <h3>Temporada de Otoño</h3>
-                <p>Hoy te compartimos un listado con las variedades de verdura ...</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-            <div class="Novedad5">
-                <!--Novedades 5-->
-                <img class="imagen-novedades" src="img/7-de-abril.jpg" alt="imagen noticia 5">
-                <h3>Todo Bolsón es Político</h3>
-                <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y ...</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-            <div class="Novedad6">
-                <!--Novedades 6-->
-                <img class="imagen-novedades" src="img/historias-de-compañeras.jpg" alt="Imagen noticia 6">
-                <h3>Vivencias de Compañeras</h3>
-                <p>Saberes y experiencias en dialogo, trabajando la tierra y construyendo soberanía ...</p>
-                <a class="enlace-texto" href="#">Leer más</a>
-            </div>
-
-        </div>
-    </section>
-    <!-- ---------------------------Fin sección Novedades Generales 2----------------------------------- -->
-
-    <!--linea divisoria-->
-    <hr class="lineaSeccion">
-
-    <footer>
+  <!--INICIO FOOTER-->
+  <footer>
+    <div class="social-media">
+      <ul>
         <!--Instagram-->
-        <img class="icono-pie" src="img/instagram-logo.png" alt="Logo de Instagram">
-        <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
+        <li>
+          <a href="https://www.instagram.com/p/CNYjsWHHydd/">
+            <img class="icono-pie" src="../img/logos/instagram-logo.png" alt="Logo de Instagram">
+          </a>
+          <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
+        </li>
         <!--Facebook-->
-        <img class="icono-pie" src="img/facebook-logo.png" alt="Logo de Facebook">
-        <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
+        <li>
+          <a href="https://www.facebook.com/nodopac.zonasur">
+            <img class="icono-pie" src="../img/logos/facebook-logo.png" alt="Logo de Facebook">
+          </a>
+          <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
+        </li>
         <!--Whatsapp-->
-        <img class="icono-pie" src="img/whatsapp-logo.png" alt="Logo Whatsapp">
-        <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=5491131292652">
+            <img class="icono-pie" src="../img/logos/whatsapp-logo.png" alt="Logo Whatsapp">
+          </a>
+          <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p>De Productores a Consumidores Nodo Zona Sur</p>
+      <p>2021</p>
+    </div>
+    <div>
+      <p>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</p>
+    </div>
 
-        <h2>De Productores a Consumidores Nodo Zona Sur 2021</h2>
-        <h3>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</h3>
+  </footer>
+  <!--FIN FOOTER-->
 
-    </footer>
+  <!-- VIDEO DE FONDO -->
+  <video autoplay muted loop id="myVideo">
+    <source src="/video/pac.mp4" type="video/mp4">
+  </video>
+  <!-- FIN DEL VIDEO DE FONDO -->
+
+  <!-- js animated aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

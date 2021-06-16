@@ -1,0 +1,38 @@
+@import '../components/color-list';
+@import '../components/queries';
+
+/* ESTILOS PROXIMA ENTREGA */
+
+.proxima-entrega-container {
+    background-image: url(../../img/fondos/entrega.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    .entrega-container {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        p {
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .formulario {
+            background-color: rgba(0, 0, 0, .0);
+            margin: auto;
+            display: flex;
+            align-content: center;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/* FIN ESTILOS PROXIMA ENTREGA */
