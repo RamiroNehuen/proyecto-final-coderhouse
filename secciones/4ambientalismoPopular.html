@@ -4,13 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
   <meta name="description"
-    content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
+      content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores. Seccion dedicada al ambientalismo popular">
+  <meta name="keywords" content="productores, consumidores, zona sur, buenos aires, argentina, agroecologico, organico, cooperativo, ambientalismo, ambientalismo popular, enciclica, laudato si">
+
+  <!--OPEN GRAPH META TAGS-->
+  <meta property="og:title" content="PAC - Ambientalismo Popular - Nodo Zona Sur">
+  <meta property="og:description" content="Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores. ¿Qué es el Ambientalismo Popular?">
+  <meta property="og:image" content="url(img/fondos/nuestros-productos.jpg)">
+  <meta property="og:url" content="Todavía no lo se O.O">
+  <meta property="og:author" content="Ramiro N. Barrerio C.">
 
   <!-- ANIMATED CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- CSS AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,16 +34,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
-  <title>PAC Ambientalismo Popular</title>
+  <title>PAC - Ambientalismo Popular - Nodo Zona Sur</title>
 </head>
 
 <body class="ambientalismo-container">
   <header>
     <!------------------------------------------Navegación-------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logo-pac" src="../img/logos/logoPac.png" alt="Logo de PAC">
+        <a class="navbar-brand" href="../index.html" title="Enlace al index, en esta página no se muestra (display none)">
+          <img class="logo-pac" src="../img/logos/logoPac.png" alt="Logo de PAC" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="0noticias.html">Noticias</a>
+              <a class="nav-link active text-white" aria-current="page" href="0noticias.html" title="Enlace a la sección Noticias">Noticias</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="1nosotros.html" id="navbarDropdownMenuLink"
@@ -49,36 +60,36 @@
                 Nosotros
               </a>
               <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item text-white" href="1nosotros.html">Sección</a></li>
-                <li><a class="dropdown-item text-white" href="1nosotros.html#contacto">Contacto</a></li>
+                <li><a class="dropdown-item text-white" href="1nosotros.html" title="Enlace a la sección Nosotros">Sección</a></li>
+                <li><a class="dropdown-item text-white" href="1nosotros.html#contacto" title="Enlace al cuadro de contacto">Contacto</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="2nuestrosProductos.html">Nuestros Productos</a>
+              <a class="nav-link text-white" href="2nuestrosProductos.html" title="enlace a la sección Nuestros Productos">Nuestros Productos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="4ambientalismoPopular.html"
-                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Economía Popular
+                  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Economía Popular
               </a>
               <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item text-white" href="3economiPopular.html">General</a></li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#rural"></a>Rural</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#cartoneros"></a>Cartoneros</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#construccion"></a>Construccion</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#textil"></a>Textil</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#liberados"></a>Liberados</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#mujeres"></a>Mujeres</li>
-                <li><a class="dropdown-item text-white" href="3economiPopular.html#comunitaria"></a>Socio Comunitaria
-                </li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html" title="Enlace a la sección Economía Popular">General</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#rural" title="Enlace a la tarjeta de la Rama Rural">Rural</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#cartoneros" title="Enlace a la tarjeta de la Rama Cartoneros y Cartoneras">Cartoneros</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#construccion" title="Enlace a la tarjeta de la Rama Construcción e Infraestructura Social">Construcción</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#textil" title="Enlace a la tarjeta de la Rama Textil">Textil</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#liberados" title="Enlace a la Tarjeta de la Rama Liberados y Liberadas">Liberados</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#mujeres" title="Enlace a la Tarjeta de la Rama Mujeres">Mujeres</a></li>
+                  <li><a class="dropdown-item text-white" href="3economiPopular.html#comunitaria" title="Enlace a la Tarjeta de la Rama Socio Comunitaria">Socio Comunitaria</a></li>
               </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="4ambientalismoPopular.html" title="Enlace a la Sección Ambientalismo Popular">Ambientalismo Popular</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
-            </li>
             <li class="nav-item">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="5proximaEntrega.html">Próxima Entrega</a>
+              <a class="nav-link text-white" href="5proximaEntrega.html" title="Enlace a la Sección Próxima Entrega">Próxima Entrega</a>
             </li>
           </ul>
         </div>
@@ -98,7 +109,7 @@
     <!-- video sobre modelos productivos -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JGXOkT-407M" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+      allowfullscreen title="video traido de youtube de la agrupación Desde La Raiz donde se discute los ditintos modelos productivos, su impacto en el abmiente y el concepto de Ambientalismo Popular"></iframe>
 
     <!-- Definicion de Ambientalismo Popular -->
     <p>
@@ -119,7 +130,7 @@
     </div>
     <div class="laudato-si" class="animate__animated animate__shakeY">
       <a class="enlace-texto"
-        href="http://www.vatican.va/content/francesco/es/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html">VER
+        href="http://www.vatican.va/content/francesco/es/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html" title="Enlace a la Enciclica Laudato Si para poder leerla">VER
         - Enciclica
         Papal, Laudato Si</a>
   </section>
@@ -134,30 +145,30 @@
       <ul>
         <!--Instagram-->
         <li>
-          <a href="https://www.instagram.com/p/CNYjsWHHydd/">
-            <img class="icono-pie" src="../img/logos/instagram-logo.png" alt="Logo de Instagram">
+          <a href="https://www.instagram.com/p/CNYjsWHHydd/" title="Enlace a nuestro Instagram">
+            <img class="icono-pie" src="../img/logos/instagram-logo.png" alt="Logo de Instagram" loading="lazy">
           </a>
-          <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
+          <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/" title="Enlace a nuestro Instagram">Instagram</a>
         </li>
         <!--Facebook-->
         <li>
-          <a href="https://www.facebook.com/nodopac.zonasur">
-            <img class="icono-pie" src="../img/logos/facebook-logo.png" alt="Logo de Facebook">
+          <a href="https://www.facebook.com/nodopac.zonasur" title="Enlace a nuestro Facebook">
+            <img class="icono-pie" src="../img/logos/facebook-logo.png" alt="Logo de Facebook" loading="lazy">
           </a>
-          <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
+          <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur" title="Enlace a nuestro Facebook">Facebook</a>
         </li>
         <!--Whatsapp-->
         <li>
-          <a href="https://api.whatsapp.com/send?phone=5491131292652">
-            <img class="icono-pie" src="../img/logos/whatsapp-logo.png" alt="Logo Whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=5491131292652" title="Enlace a nuestro Whatsapp">
+            <img class="icono-pie" src="../img/logos/whatsapp-logo.png" alt="Logo Whatsapp" loading="lazy">
           </a>
-          <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
+          <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652" title="Enlace a nuestro Whatsapp">Whatsapp</a>
         </li>
       </ul>
     </div>
     <div>
-      <h1>De Productores a Consumidores Nodo Zona Sur</h1>
-      <h6>2021</h6>
+      <p>De Productores a Consumidores Nodo Zona Sur</p>
+      <p>2021</p>
     </div>
     <div>
       <p>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</p>

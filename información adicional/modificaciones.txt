@@ -82,3 +82,36 @@ Entrega miercoles 16/6/2021:
 - Una primera parte del desafio obligatorio para este día estaba cumplido, pues había migrado todo mi CSS a SASS. Sume ahora mixin (sección 
 noticias, con más de 2 parametros), extend (sección economía popular), una condición con mixin (sección Ambientalismo Popular), un mapa y por
 último como aclare más arriba queries (todas las secciones a pantalla pequeña, aunque todavía estoy teniendo algunos problemas).-
+
+------------------------------------------------------------------------
+
+Entrega lunes 20/6/2021:
+
+- Cambie en el menú con dropdown el desplegable de la sección ambientalismo popular por uno en la
+sección Economía popular.-
+
+Buenas practicas de SEO aplicadas (10):
+
+- Agregue font-display swap en la font family que se carga local, para que mejore la carga y tiempo de respuesta del sitio.-
+
+- Agreugé loading lazy a las imgenes usadas en el proyecto, para que mejore la carga y tiempo de respuesta del sitio.-
+
+- Corregí todos los titles de las secciones para que cumplan con la cantidad de caracteres optima de 35 a 65.-
+
+- Agregué la meta tag description con una catidad de caracteres dentro del rango recomendado y que explicita el objeto del sitio, para mejorar la indexación de mi página.-
+
+- Agregué la meta tag keyword con palabras clave que ayuden al mejor pocicionamiento del sitio comprensivas de su objeto y contemplando que sean palabras usadas dentro de las distintas secciones.-
+
+- Agruegé un maximum scale a la meta tag viewport para que los usarios puedan hacer zoom en mi pagina sin problemas, ajustando el tamaño del contenido a su capacidad visual.-
+
+- Agregúe las meta tags Open Graph para establecer de que modo se mostrará el sitio, sus distintas secciones, al ser compartido en redes sociales.-
+
+- Completé y mejoré las etiquetas alt de mis imagenes para intentar garantizar una mejor accesibilidad.-
+
+- Agregué descripciones a todos mis enlaces utilizando la etiqueta title.-
+
+- Agregué descripciones al video utilizado de fondo para el index con la etiqueta title.-
+
+- Agregué descripciones al las etiquetas iframe usadas para traer a mi página el formulario de google donde los clientes pueden hacer sus pedidos y los videos traidos de youtube a las secciones ambientalismo popular y economía pupular respectivamente con la etiqueta title.-
+
+------------------------------------------------------------------------

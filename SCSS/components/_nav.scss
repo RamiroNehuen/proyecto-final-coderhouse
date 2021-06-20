@@ -10,7 +10,9 @@
 /* FIN LOGO NAVS*/
 
 
-/*NAV INDEX*/
+/*NAV*/
+
+
 .navbar {
     position: relative;
     z-index: 1;
@@ -33,10 +35,21 @@
 }
 
 .dropdown-item {
+    background-color: rgba(0, 179, 71, .9);
     &:hover {
         background-color: nth($colores, 1);
     }
 
 }
+
+.nav-index {
+    position: relative;
+    z-index: 1;
+
+    .logo-pac {
+        display: none;
+    }
+}
+
 
 /*FIN ESTILOS NAV*/

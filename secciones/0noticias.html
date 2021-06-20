@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="author" content="Ramiro Nehuen Barreiro Corvalan">
     <meta name="description"
-        content="Pagina de Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        content="Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores. Sección de novedades">
+    <meta name="keywords" content="productores, consumidores, zona sur, buenos aires, argentina, agroecologico, organico, cooperativo, novedades, ultimas novedades">
+    
+    <!--OPEN GRAPH META TAGS-->
+  <meta property="og:title" content="PAC - Últimas Novedades - Nodo Zona Sur">
+  <meta property="og:description" content="Productores a Consumidores Nodo Zona Sur. Iniciativa que busca llevar verduras y productos agroecologicos, organicos y de la economia popular directo a los consumidores. ¡NOVEDADES!">
+  <meta property="og:image" content="url(img/fondos/nuestros-productos.jpg)">
+  <meta property="og:url" content="Todavía no lo se O.O">
+  <meta property="og:author" content="Ramiro N. Barrerio C.">
 
     <!-- CSS AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,80 +34,67 @@
     <!-- FONT AWSOME INCONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>PAC Nodo Zona Sur</title>
+    <title>PAC - Últimas Novedades - Nodo Zona Sur</title>
 </head>
 
 <body class="noticias-container">
     <header>
         <!-- ---------------------------Inicio Navegación-------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fs-5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo-pac" src="../img/logos/logoPac.png" alt="Logo de PAC">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="0noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="1nosotros.html"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Nosotros
-                            </a>
-                            <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-white" href="1nosotros.html">Sección</a>
-                                </li>
-                                <li><a class="dropdown-item text-white"
-                                        href="1nosotros.html#contacto">Contacto</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="2nuestrosProductos.html">Nuestros
-                                Productos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white"
-                                href="4ambientalismoPopular.html" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Economía Popular
-                            </a>
-                            <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html">General</a></li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#rural"></a>Rural</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#cartoneros"></a>Cartoneros</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#construccion"></a>Construccion</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#textil"></a>Textil</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#liberados"></a>Liberados</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#mujeres"></a>Mujeres</li>
-                                <li><a class="dropdown-item text-white"
-                                        href="3economiPopular.html#comunitaria"></a>Socio Comunitaria</li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="4ambientalismoPopular.html">Ambientalismo Popular</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="5proximaEntrega.html">Próxima Entrega</a>
-                        </li>
+              <a class="navbar-brand" href="../index.html" title="Enlace al index, en esta página no se muestra (display none)">
+                <img class="logo-pac" src="../img/logos/logoPac.png" alt="Logo de PAC" loading="lazy">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="0noticias.html" title="Enlace a la sección Noticias">Noticias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="1nosotros.html" id="navbarDropdownMenuLink"
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nosotros
+                    </a>
+                    <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item text-white" href="1nosotros.html" title="Enlace a la sección Nosotros">Sección</a></li>
+                      <li><a class="dropdown-item text-white" href="1nosotros.html#contacto" title="Enlace al cuadro de contacto">Contacto</a></li>
                     </ul>
-                </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="2nuestrosProductos.html" title="enlace a la sección Nuestros Productos">Nuestros Productos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="4ambientalismoPopular.html"
+                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Economía Popular
+                    </a>
+                    <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html" title="Enlace a la sección Economía Popular">General</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#rural" title="Enlace a la tarjeta de la Rama Rural">Rural</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#cartoneros" title="Enlace a la tarjeta de la Rama Cartoneros y Cartoneras">Cartoneros</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#construccion" title="Enlace a la tarjeta de la Rama Construcción e Infraestructura Social">Construcción</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#textil" title="Enlace a la tarjeta de la Rama Textil">Textil</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#liberados" title="Enlace a la Tarjeta de la Rama Liberados y Liberadas">Liberados</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#mujeres" title="Enlace a la Tarjeta de la Rama Mujeres">Mujeres</a></li>
+                        <li><a class="dropdown-item text-white" href="3economiPopular.html#comunitaria" title="Enlace a la Tarjeta de la Rama Socio Comunitaria">Socio Comunitaria</a></li>
+                    </ul>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="4ambientalismoPopular.html" title="Enlace a la Sección Ambientalismo Popular">Ambientalismo Popular</a>
+                  </li>
+                  <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="5proximaEntrega.html" title="Enlace a la Sección Próxima Entrega">Próxima Entrega</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <!-- ------------------------------------Fin Navegación------------------------------------ -->
     </header>
 
@@ -121,21 +115,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/noticias/ultima-noticia1.jpg" class="d-block w-100" alt="imagen utlima noticia 1">
+                    <img src="../img/noticias/ultima-noticia1.jpg" class="d-block w-100" alt="Imagen ilustrativa de la última novedad primera" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>22 de abril</h5>
                         <p>Hoy 22 de abril se conmemora el Día de la Tierra</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/noticias/ultima-noticia2.jpg" class="d-block w-100" alt="imagen utlima noticia 2">
+                    <img src="../img/noticias/ultima-noticia2.jpg" class="d-block w-100" alt="Imagen ilustrativa de la última novedad segunda" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>17 de abril</h5>
                         <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/noticias/ultima-noticia3.jpg" class="d-block w-100" alt="imagen utlima noticia 3">
+                    <img src="../img/noticias/ultima-noticia3.jpg" class="d-block w-100" alt="Imagen ilustrativa de la ultima novedad tercera" loading="lazy">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Todo Bolsón es político</h5>
                         <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y desde Nodo PAC Zonasur intentamos
@@ -167,7 +161,7 @@
         <!--Novedades 1-->
         <div data-aos="fade-right" data-aos-duration="1500">
             <div>
-            <img class="img-fluid" src="../img/noticias/22-de-abril.jpg" alt="imagen noticia 1">
+            <img class="img-fluid" src="../img/noticias/22-de-abril.jpg" alt="Imagen ilustrativa de la primera novedad" loading="lazy">
             <div>
                 <h4>22 de abril</h4>
                 <p>Hoy 22 de abril se conmemora el día de la Tierra Lorem ipsum dolor sit amet consectetur adipisicing
@@ -182,7 +176,7 @@
         <!--Novedades 2-->
         <div data-aos="fade-left" data-aos-duration="1500">
             <div>
-                <img class="img-fluid" src="../img/noticias/17-de-abril.jpg" alt="imagen noticia 2">
+                <img class="img-fluid" src="../img/noticias/17-de-abril.jpg" alt="Imagen ilustrativa de la segunda novedad" loading="lazy">
                 <div>
                     <h4>17 de abril</h4>
                     <p>Este 17 de abril conmemoramos el Día Internacional de la Lucha Campesina ... Lorem ipsum dolor
@@ -200,7 +194,7 @@
         <!--Novedades 3-->
         <div data-aos="fade-right" data-aos-duration="1500">
             <div>
-                <img class="img-fluid" src="../img/noticias/nuestros-productos.jpg" alt="imagen noticia 3">
+                <img class="img-fluid" src="../img/noticias/nuestros-productos.jpg" alt="Imagen ilustrativa de la tercera novedad" loading="lazy">
                 <div>
                     <h4>Conoce más productctos</h4>
                     <p>Yerba de 1 kg $250; Miel de 1/2 ($280) y 1 kg ($390) 🍯; Lorem ipsum dolor, sit amet consectetur
@@ -216,7 +210,7 @@
         <!--Novedades 4-->
         <div data-aos="fade-left" data-aos-duration="1500">
             <div>
-                <img class="img-fluid" src="../img/noticias/estacion-otono.jpg" alt="imagen noticia 4">
+                <img class="img-fluid" src="../img/noticias/estacion-otono.jpg" alt="Imagen ilustrativa de la cuarta novedad" loading="lazy">
                 <div>
                     <h4>Temporada de Otoño</h4>
                     <p>Hoy te compartimos un listado con las variedades de verdura ... Lorem ipsum dolor sit amet
@@ -232,7 +226,7 @@
         <!--Novedades 5-->
         <div data-aos="fade-right" data-aos-duration="1500">
             <div>
-                <img class="img-fluid" src="../img/noticias/7-de-abril.jpg" alt="imagen noticia 5">
+                <img class="img-fluid" src="../img/noticias/7-de-abril.jpg" alt="Imagen ilustrativa de la quinta novedad" loading="lazy">
                 <div>
                     <h4>Todo Bolsón es Político</h4>
                     <p>Hoy 7 de abril se conmemora el Día Mundial de la Salud y ... Lorem ipsum dolor sit amet
@@ -249,7 +243,7 @@
         <!--Novedades 6-->
         <div data-aos="fade-left" data-aos-duration="1500">
             <div>
-                <img class="img-fluid" src="../img/noticias/historias-de-compañeras.jpg" alt="Imagen noticia 6">
+                <img class="img-fluid" src="../img/noticias/historias-de-compañeras.jpg" alt="Imagen ilustrativa de la sexta novedad" loading="lazy">
                 <div>
                     <h4>Vivencias de Compañeras</h4>
                     <p>Saberes y experiencias en dialogo, trabajando la tierra y construyendo soberanía Lorem ipsum
@@ -271,38 +265,38 @@
     <!-- ----------------------------Inicio footer------------------- -->
     <footer>
         <div class="social-media">
-            <ul>
-                <!--Instagram-->
-                <li>
-                    <a href="https://www.instagram.com/p/CNYjsWHHydd/">
-                        <img class="icono-pie" src="../img/logos/instagram-logo.png" alt="Logo de Instagram">
-                    </a>
-                    <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/">Instagram</a>
-                </li>
-                <!--Facebook-->
-                <li>
-                    <a href="https://www.facebook.com/nodopac.zonasur">
-                        <img class="icono-pie" src="../img/logos/facebook-logo.png" alt="Logo de Facebook">
-                    </a>
-                    <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur">Facebook</a>
-                </li>
-                <!--Whatsapp-->
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5491131292652">
-                        <img class="icono-pie" src="../img/logos/whatsapp-logo.png" alt="Logo Whatsapp">
-                    </a>
-                    <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652">Whatsapp</a>
-                </li>
-            </ul>
+          <ul>
+            <!--Instagram-->
+            <li>
+              <a href="https://www.instagram.com/p/CNYjsWHHydd/" title="Enlace a nuestro Instagram">
+                <img class="icono-pie" src="../img/logos/instagram-logo.png" alt="Logo de Instagram" loading="lazy">
+              </a>
+              <a class="enlace-texto" href="https://www.instagram.com/p/CNYjsWHHydd/" title="Enlace a nuestro Instagram">Instagram</a>
+            </li>
+            <!--Facebook-->
+            <li>
+              <a href="https://www.facebook.com/nodopac.zonasur" title="Enlace a nuestro Facebook">
+                <img class="icono-pie" src="../img/logos/facebook-logo.png" alt="Logo de Facebook" loading="lazy">
+              </a>
+              <a class="enlace-texto" href="https://www.facebook.com/nodopac.zonasur" title="Enlace a nuestro Facebook">Facebook</a>
+            </li>
+            <!--Whatsapp-->
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=5491131292652" title="Enlace a nuestro Whatsapp">
+                <img class="icono-pie" src="../img/logos/whatsapp-logo.png" alt="Logo Whatsapp" loading="lazy">
+              </a>
+              <a class="enlace-texto" href="https://api.whatsapp.com/send?phone=5491131292652" title="Enlace a nuestro Whatsapp">Whatsapp</a>
+            </li>
+          </ul>
         </div>
         <div>
-            <h1>De Productores a Consumidores Nodo Zona Sur</h1>
-            <h6>2021</h6>
+          <p>De Productores a Consumidores Nodo Zona Sur</p>
+          <p>2021</p>
         </div>
         <div>
-            <p>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</p>
+          <p>Antonio Saenz 317, Lomas de Zamora, Bs. As., Argentina</p>
         </div>
-
+    
     </footer>
     <!-- ---------------------------- Fin Footer------------------- -->
 
