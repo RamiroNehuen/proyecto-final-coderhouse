@@ -116,7 +116,9 @@
 
     /*Sección Economía Popular Pequeño*/
 
-    .video-economia-popular-container {
+.economiaP-container {
+
+.video-economia-popular-container {
         h2 {
             font-size: 2rem;
             text-align: center;
@@ -151,7 +153,6 @@
 
             div {
                 flex-basis: 90%;
-
                 div {
                     h4 {
                         font-size: 1.2rem;
@@ -170,6 +171,9 @@
         }
     }
 
+}
+
+    
 
     /*Fin Sección Economía Popular Pequeño*/
 

@@ -88,12 +88,11 @@
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -101,28 +100,27 @@
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -389,12 +387,11 @@ hr {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -402,28 +399,27 @@ hr {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -639,12 +635,11 @@ footer .social-media ul li .enlace-texto {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -652,28 +647,27 @@ footer .social-media ul li .enlace-texto {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -852,12 +846,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -865,28 +858,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1109,12 +1101,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -1122,28 +1113,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1389,12 +1379,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -1402,28 +1391,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1695,12 +1683,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -1708,28 +1695,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -1943,12 +1929,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -1956,28 +1941,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -2236,12 +2220,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -2249,28 +2232,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -2500,12 +2482,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -2513,28 +2494,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -2783,12 +2763,11 @@ footer div p {
 
   /* Fin Sección Productos Pequeño*/
   /*Sección Economía Popular Pequeño*/
-  .video-economia-popular-container h2 {
+  .economiaP-container .video-economia-popular-container h2 {
     font-size: 2rem;
     text-align: center;
   }
-
-  p {
+  .economiaP-container p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -2796,28 +2775,27 @@ footer div p {
     overflow: hidden;
     font-size: 1rem;
   }
-
-  .ramas-container h3 {
+  .economiaP-container .ramas-container h3 {
     font-size: 2rem;
     text-align: center;
   }
-  .ramas-container div {
+  .economiaP-container .ramas-container div {
     display: flex;
     flex-direction: column;
     margin: 3% 0;
     align-items: center;
   }
-  .ramas-container div img {
+  .economiaP-container .ramas-container div img {
     width: 12.5rem;
     height: 12.5rem;
   }
-  .ramas-container div div {
+  .economiaP-container .ramas-container div div {
     flex-basis: 90%;
   }
-  .ramas-container div div div h4 {
+  .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
   }
-  .ramas-container div div div p {
+  .economiaP-container .ramas-container div div div p {
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 3;
