@@ -1279,10 +1279,29 @@ footer div p {
 }
 .novedades-container div div div p {
   text-align: justify;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+}
+.novedades-container div div div p #more {
+  display: none;
+}
+.novedades-container div div div button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.novedades-container div div div button:hover, .novedades-container div div div button:focus {
+  background-size: 100% 2px;
+  color: #ffffff;
 }
 .novedades-container div div div h4 {
   text-align: center;

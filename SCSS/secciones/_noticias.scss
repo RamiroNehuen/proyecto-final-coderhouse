@@ -62,10 +62,32 @@
 
                 p {
                     text-align: justify;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
+                    #more {
+                        display: none;
+                    }
+                }
+
+                button {
+                    background: none;
+                    color: nth($colores, 2);
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                    border:none;
+                    text-decoration: none;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+
+                    &:hover,
+                    &:focus {
+                        background-size: 100% 2px;
+                        color: nth($colores, 2);
+                    }
                 }
 
                 h4 {
