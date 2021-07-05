@@ -71,7 +71,6 @@
             padding-left: 0;
 
             li {
-                font-size: .5rem;
                 align-items: center;
             }
         }
@@ -98,6 +97,46 @@
 
     /* Fin Sección Nosotros Pequeños*/
 
+    /*Inicio sección Ambientalismo pequeña*/
+
+    .ambientalismo-container {
+    
+        section {
+    
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+    
+            iframe {
+                margin-bottom: 2rem;
+                width: 250px; 
+                height: 155px;
+            }
+    
+            .laudato-si {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+    }
+
+    .proxima-entrega-container {
+    
+        .entrega-container {
+
+            section {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    /*Fin sección ambientalismo pequeña*/
+
     /*Sección Productos Pequeño*/
     .productos-container {
         div {
@@ -123,6 +162,11 @@
             font-size: 2rem;
             text-align: center;
         }
+
+        iframe {
+            width: 250px;
+            height: 155px;
+        }
     }
 
     p {
@@ -131,7 +175,6 @@
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        font-size: 1rem;
     }
 
     .ramas-container {

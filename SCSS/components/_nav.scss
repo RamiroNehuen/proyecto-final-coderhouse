@@ -16,7 +16,7 @@
 
 .navbar {
     position: relative;
-    z-index: 1;
+    z-index: 1000;
     transition: all ease .65s;
     a {
         &:hover {
@@ -43,14 +43,7 @@
 
 }
 
-.nav-index {
-    position: relative;
-    z-index: 1;
 
-    .logo-pac {
-        display: none;
-    }
-}
 
 nav.scroll {
     background: rgb(0,179,71);
