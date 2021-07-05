@@ -115,3 +115,12 @@ Buenas practicas de SEO aplicadas (10):
 - Agregué descripciones al las etiquetas iframe usadas para traer a mi página el formulario de google donde los clientes pueden hacer sus pedidos y los videos traidos de youtube a las secciones ambientalismo popular y economía pupular respectivamente con la etiqueta title.-
 
 ------------------------------------------------------------------------
+
+Entrega lunes 5/7/2021:
+- Web en servidor.
+- Aplicado JavaScript en las tarjetas de la sección noticias/novedades.
+- Aplicado JavaScript en navbar para efecto stiky y cambio de estilo al scrolear.
+- Saque el index con video de fondo que lo estaba pensando como landing page pero no me gustó como funcionaba.
+
+4 ta entrega trabajo final:
+- Queries completas y probadas.

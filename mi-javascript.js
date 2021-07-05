@@ -1,7 +1,18 @@
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function() {
+  const offset = window.pageYOffset;
+  
+  if(offset > 75)
+    nav.classList.add('scroll')
+  else 
+    nav.classList.remove('scroll')
+});
+
+function myFunction(numero) {
+    var dots = document.querySelector(`.novedad[prueba="${numero}"] .dots`);
+    var moreText = document.querySelector(`.novedad[prueba="${numero}"] #more`); 
+    var btnText = document.querySelector(`.novedad[prueba="${numero}"] .myBtn`);
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -13,3 +24,5 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+
