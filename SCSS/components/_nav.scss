@@ -22,7 +22,6 @@
         &:hover {
             background: rgb(114, 51, 155);
             background: linear-gradient(90deg, rgba(114, 51, 155, 1) 0%, rgba(0, 179, 71, 1) 44%, rgba(242, 101, 45, 1) 100%);
-            border-radius: 50px;
         }
     }
 
@@ -36,7 +35,8 @@
 }
 
 .dropdown-item {
-    background-color: rgba(0, 179, 71, .9);
+    background: rgb(0,179,71);
+    background: linear-gradient(90deg, rgba(0,179,71,1) 44%, rgba(3,29,11,1) 100%);
     &:hover {
         background-color: nth($colores, 1);
     }

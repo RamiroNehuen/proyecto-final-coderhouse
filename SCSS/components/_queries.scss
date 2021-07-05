@@ -80,14 +80,35 @@
             text-align: center;
         }
 
+
+
         #contacto {
             .tituloFormulario {
                 font-size: 2rem;
             }
-        }
 
-        h2 {
-            font-size: 2rem;
+            .formulario-contacto-container {
+                display: flex;
+                flex-direction: column;
+
+                .informacion-contacto {
+                    h4 {
+                        margin: 1rem;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+
+                        li {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
         }
 
         h2 {
@@ -98,33 +119,44 @@
     /* Fin Sección Nosotros Pequeños*/
 
     /*Inicio sección Ambientalismo pequeña*/
-
     .ambientalismo-container {
-    
+
         section {
-    
+
             h2 {
                 font-size: 2rem;
                 text-align: center;
             }
-    
+
             iframe {
                 margin-bottom: 2rem;
-                width: 250px; 
+                width: 250px;
                 height: 155px;
             }
-    
+
+            p {
+                text-align: justify;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-size: 1rem;
+            }
+
             .laudato-si {
                 a {
                     font-size: 1rem;
                 }
             }
         }
-    
+
     }
 
+    /*FIN SECCIÓN AMBIENTALISMO PEQUEÑO*/
+
+    /*SECCIÓN PROXIMA ENTREGA PEQUEÑO*/
     .proxima-entrega-container {
-    
+
         .entrega-container {
 
             section {
@@ -135,9 +167,9 @@
         }
     }
 
-    /*Fin sección ambientalismo pequeña*/
+    /*FIN SECCION PROXIMA ENTREGA PEQUEÑO*/
 
-    /*Sección Productos Pequeño*/
+    /*SECCIÓN NUESTROS PRODUCTOS PEQUEÑO*/
     .productos-container {
         div {
             .text-center {
@@ -148,79 +180,75 @@
         h5 {
             text-align: center;
         }
-
     }
 
-    /* Fin Sección Productos Pequeño*/
+    /* FIN SECCION NUESTROS PRODUCTOS PEQUEÑOS*/
 
-    /*Sección Economía Popular Pequeño*/
+    /*SECCIÓN ECONOMÍA POPULAR PEQUEÑO*/
+    .economiaP-container {
 
-.economiaP-container {
+        .video-economia-popular-container {
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
 
-.video-economia-popular-container {
-        h2 {
-            font-size: 2rem;
-            text-align: center;
+            iframe {
+                width: 250px;
+                height: 155px;
+            }
         }
 
-        iframe {
-            width: 250px;
-            height: 155px;
-        }
-    }
-
-    p {
-        text-align: justify;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .ramas-container {
-        h3 {
-            font-size: 2rem;
-            text-align: center;
+        p {
+            text-align: justify;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
-        div {
-            display: flex;
-            flex-direction: column;
-            margin: 3% 0;
-            align-items: center;
-
-            img {
-                width: 12.5rem;
-                height: 12.5rem;
+        .ramas-container {
+            h3 {
+                font-size: 2rem;
+                text-align: center;
             }
 
             div {
-                flex-basis: 90%;
-                div {
-                    h4 {
-                        font-size: 1.2rem;
-                    }
+                display: flex;
+                flex-direction: column;
+                margin: 3% 0;
+                align-items: center;
 
-                    p {
-                        text-align: justify;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        font-size: 1rem;
+                img {
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+
+                div {
+                    flex-basis: 90%;
+
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
         }
+
     }
+    /*FIN SECCIÓN ECONOMÍA POPULAR PEQUEÑO*/
 
-}
-
-    
-
-    /*Fin Sección Economía Popular Pequeño*/
-
-    /*Inicio Footer pequeño*/
+    /*INICIO FOOTER PEQUEÑO*/
     footer {
         div {
 
@@ -247,70 +275,266 @@
     }
 }
 
-/*Fin Footer Pequeo*/
-
-
+/*FIN FOOTER PEQUEÑO*/
 /*Fin Media Query Pequeño*/
 
+
+/*INICIO MEDIA QUERY MEDIANO*/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    * {
-        font-size: 0.8rem;
-    }
-
-    body {
-        background-image: none;
-        background-color: #1c291f;
-    }
-
-    p {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        font-size: .5rem;
-
-    }
-
-    .ambientalismo-container p {
-        font-size: .5rem;
-    }
-
-    .ambientalismo-container h2,
-    .ambientalismo-container a {
-        font-size: 2rem;
-        text-align: center;
-    }
 
     .logo-pac {
-        width: 35px;
+        width: 5rem;
     }
 
-    .menu {
-        flex-wrap: wrap;
+    /*INICIO SECCIÓN NOTICIAS MEDIANO*/
+    .noticias-container {
+
+        h2,
+        h3 {
+            font-size: 3rem;
+        }
     }
 
-    .menu li {
-        padding: 5px;
-    }
-
-    footer {
-        font-size: .1rem;
-    }
-
-    footer .enlace-texto {
-        display: none;
-    }
-
-    footer .social-media ul {
+    .novedades-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        overflow: hidden;
+
+        div {
+            display: flex;
+            margin: 3% 0;
+            align-items: center;
+
+            img {
+                width: 12.5rem;
+                height: 12.5rem;
+            }
+
+            div {
+                flex-basis: 90%;
+
+                div {
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        text-align: justify;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+    /* FIN SECCION NOTICIAS MEDIANO*/
+
+    /*SECCION NOSOTROS MEDIANO*/
+    .nosotros-container {
+        p {
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                align-items: center;
+            }
+        }
+
+        h4 {
+            font-size: .5rem;
+            text-align: center;
+        }
+
+        #contacto {
+            .tituloFormulario {
+                font-size: 3rem;
+            }
+
+            .formulario-contacto-container {
+                display: flex;
+                flex-direction: column;
+
+                .informacion-contacto {
+                    h4 {
+                        margin: 1rem;
+                        font-size: 1.5rem;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+
+                        li {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    /*FIN SECCIÓN NOSOTROS MEDIANO*/
+
+    /*INICIO SECCIÓN AMBIENTALISMO MEDIANO*/
+    .ambientalismo-container {
+
+        section {
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            iframe {
+                margin-bottom: 2rem;
+            }
+
+            p {
+                text-align: justify;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-size: 1rem;
+            }
+
+            .laudato-si {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+    /*FIN SECCION AMBIENTALISMO MEDIANO*/
+
+    /* SECCION PROXIMA ENTREGA MEDIANO*/
+    .proxima-entrega-container {
+
+        .entrega-container {
+
+            section {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    /*FIN SECCION PROXIMA ENTREGA MEDIANO*/ 
+
+    /*SECCIÓN NUESTROS PRODUCTOS MEDIANO*/
+    .productos-container {
+        div {
+            .text-center {
+                font-size: 3rem;
+            }
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+    }
+    /*FIN SECCIÓN NUESTROS PRODUCTOS MEDIANO*/
+
+    /*SECCIÓN ECONOMIA POPULAR MEDIANO*/
+    .economiaP-container {
+
+        .video-economia-popular-container {
+            h2 {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+
+        p {
+            text-align: justify;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .ramas-container {
+            h3 {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                margin: 3% 0;
+                align-items: center;
+
+                img {
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+
+                div {
+                    flex-basis: 90%;
+
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    /*FIN SECCIÓN ECONOMÍA POPULAR MEDIANO*/
+
+    /*INICIO FOOTER MEDIANO*/
+    footer {
+        div {
+
+            h1,
+            h6,
+            p {
+                font-size: .7rem;
+            }
+
+        }
+
+        .enlace-texto {
+            display: none;
+        }
+
+        .social-media ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin: 1vw;
+            }
+        }
     }
 
-    footer .social-media ul li {
-        margin: 1vw;
-    }
-
-    .nuestros-productos-container h2 {
-        font-size: 2rem;
-    }
 }
+
+/*FIN FOOTER MEDIANO*/
+/*FIN QUERY MEDIANO*/

@@ -124,3 +124,4 @@ Entrega lunes 5/7/2021:
 
 4 ta entrega trabajo final:
 - Queries completas y probadas.
+- Arregle algunos detalles.
