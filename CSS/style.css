@@ -2141,12 +2141,12 @@ footer div p {
   outline: none;
   color: #ffffff;
 }
-#contacto .formulario-contacto-container .formulario-completar form p button {
+#contacto .formulario-contacto-container .formulario-completar form p .boton-enviar {
   background: #00b347;
   border: 0;
   text-transform: uppercase;
 }
-#contacto .formulario-contacto-container .formulario-completar form p button:hover, #contacto .formulario-contacto-container .formulario-completar form p button:focus {
+#contacto .formulario-contacto-container .formulario-completar form p .boton-enviar:hover, #contacto .formulario-contacto-container .formulario-completar form p .boton-enviar:focus {
   background: #00ff00;
   transition: background-color 1s ease-out;
   outline: 0;
