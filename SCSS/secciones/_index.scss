@@ -1,0 +1,134 @@
+@import '../components/color-list';
+@import '../components/mixin-extend';
+@import '../components/queries';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.colorSolido1 {
+    background: linear-gradient(-45deg, #ee7752, #00b347, #107631, blueviolet);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height: 100vh;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.colorSolido1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.colorSolido1 div h2 {
+    margin: 2rem;
+}
+
+.colorSolido1 .navbar .container-fluid .navbar-brand .logo-pac {
+    width: 4rem;
+}
+
+.colorSolido1 .navbar .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.colorSolido2{
+    background-color: #007015;
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorSolido2 div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.colorSolido2 div h2,
+.colorSolido2 div p {
+    margin: 2rem;
+    text-align: center;
+}
+
+.colorSolido2 div h2 {
+    font-size: 4rem;
+}
+
+.color-parrafo {
+    background-color: green;
+}
+
+
+.colorSolido3{
+background-color: #007015;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+.colorSolido3 h2,
+.colorSolido3 h3 {
+    margin: 4rem;
+}
+
+.colorSolido3 h2 {
+    font-size: 3.5rem;
+}
+
+.colorSolido3 .card {
+    background-color: blueviolet;
+}
+
+.colorSolido4 {
+    background-color: #007015;
+    height: 100vh;
+}
+
+.imgFondo1 {
+background-image: url(../../img/fondos/noticias.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 70vh;
+}
+
+.imgFondo2 {
+background-image: url(../../img/fondos/nosotros.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 70vh;
+}
+
+.imgFondo3 {
+background-image: url(../../img/fondos/nuestros-productos.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 70vh;
+}
