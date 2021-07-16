@@ -408,8 +408,6 @@ footer div p {
   }
 }
 /*FIN INDEX PEQUEÑO*/
-/*INICIO INDEX MEDIANO*/
-/*FIN INDEX MEDIANO*/
 /*FIN ESTILOS INDEX*/
 .proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto {
   display: flex;
@@ -725,10 +723,7 @@ footer div p {
 }
 /*FIN NOSOTROS PEQUEÑO*/
 /*INICIO NOSOTROS MEDIANO*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .nosotros-container p {
-    font-size: 1rem;
-  }
+@media only screen and (min-width: 481px) and (max-width: 780px) {
   .nosotros-container ul {
     padding-left: 0;
   }
@@ -939,13 +934,6 @@ footer div p {
     font-size: 3rem;
     text-align: center;
   }
-  .economiaP-container p {
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   .economiaP-container .ramas-container h3 {
     font-size: 3rem;
     text-align: center;
@@ -964,14 +952,6 @@ footer div p {
   }
   .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
-  }
-  .economiaP-container .ramas-container div div div p {
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 1rem;
   }
 }
 /*FIN ECONOMÍA POPULAR MEDIANO*/
@@ -1047,7 +1027,7 @@ footer div p {
     font-size: 1rem;
   }
   .ambientalismo-container section .laudato-si a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /*FIN AMBIENTALISMO POPULAR PEQUEÑO*/
@@ -1187,13 +1167,6 @@ footer div p {
     font-size: 3rem;
     text-align: center;
   }
-  .economiaP-container p {
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   .economiaP-container .ramas-container h3 {
     font-size: 3rem;
     text-align: center;
@@ -1212,14 +1185,6 @@ footer div p {
   }
   .economiaP-container .ramas-container div div div h4 {
     font-size: 1.2rem;
-  }
-  .economiaP-container .ramas-container div div div p {
-    text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 1rem;
   }
 }
 /*FIN ECONOMÍA POPULAR MEDIANO*/
