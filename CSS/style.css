@@ -174,14 +174,14 @@ footer div p {
 }
 /*FIN FOOTER MEDIANO*/
 /* FIN ESTILOS FOOTER */
-.economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .contacto-index .contacto, .index-cuerpo .titulo-index div {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .contacto-index .contacto, .index-cuerpo .titulo-index div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .contacto-index .contacto, .index-cuerpo .titulo-index div {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .contacto-index .contacto, .index-cuerpo .titulo-index div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,9 +280,75 @@ footer div p {
   align-items: baseline;
   justify-content: center;
 }
+.index-cuerpo .contacto-index #contacto .tituloFormulario {
+  text-align: center;
+  font-size: 3.125rem;
+  letter-spacing: 10px;
+  padding: 1rem;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container {
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar {
+  background-color: #107631;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p {
+  margin: 0;
+  padding: 0.5em;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p button,
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p input,
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #00ff00;
+  outline: none;
+  color: #ffffff;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p .boton-enviar {
+  background: #00b347;
+  border: 0;
+  text-transform: uppercase;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p .boton-enviar:hover, .index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar form p .boton-enviar:focus {
+  background: #00ff00;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.index-cuerpo .contacto-index #contacto .formulario-contacto-container .formulario-completar .entero {
+  grid-column: 1/3;
+}
+.index-cuerpo .contacto-index #contacto .informacion-contacto {
+  background-color: #00b347;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-cuerpo .contacto-index #contacto .informacion-contacto h4 li,
+.index-cuerpo .contacto-index #contacto .informacion-contacto ul li,
+.index-cuerpo .contacto-index #contacto .informacion-contacto p li {
+  font-family: "Montserrat", sans-serif;
+  padding: 1em;
+  list-style: none;
+  color: #ffffff;
+  text-align: center;
+}
 .index-cuerpo .espacio {
   height: 20vh;
-  background-color: rgba 0, 0, 0, 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*INICIO INDEX PEQUEÑO*/
@@ -311,30 +377,30 @@ footer div p {
   .index-cuerpo .productos-index {
     overflow-x: hidden;
   }
-  .index-cuerpo #contacto .tituloFormulario {
+  .index-cuerpo .contacto-index {
+    overflow-x: hidden;
+  }
+  .index-cuerpo .contacto-index #contacto .tituloFormulario {
     font-size: 2rem;
   }
-  .index-cuerpo #contacto .formulario-contacto-container {
+  .index-cuerpo .contacto-index #contacto .formulario-contacto-container {
     display: flex;
     flex-direction: column;
   }
-  .index-cuerpo #contacto .formulario-contacto-container .informacion-contacto h4 {
+  .index-cuerpo .contacto-index #contacto .formulario-contacto-container .informacion-contacto h4 {
     margin: 1rem;
   }
-  .index-cuerpo #contacto .formulario-contacto-container .informacion-contacto ul {
+  .index-cuerpo .contacto-index #contacto .formulario-contacto-container .informacion-contacto ul {
     margin: 0;
     padding: 0;
     text-align: center;
   }
-  .index-cuerpo #contacto .formulario-contacto-container .informacion-contacto ul li {
+  .index-cuerpo .contacto-index #contacto .formulario-contacto-container .informacion-contacto ul li {
     padding: 0;
     margin: 0;
   }
-  .index-cuerpo #contacto p {
+  .index-cuerpo .contacto-index #contacto p {
     font-size: 0.7rem;
-  }
-  .index-cuerpo .contacto-index {
-    overflow-x: hidden;
   }
   .index-cuerpo .contacto-index iframe {
     width: 300px;
@@ -345,7 +411,7 @@ footer div p {
 /*INICIO INDEX MEDIANO*/
 /*FIN INDEX MEDIANO*/
 /*FIN ESTILOS INDEX*/
-.economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .economiaP-container section .ramas-container div div, .noticias-container .novedades-container div div, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -752,7 +818,7 @@ footer div p {
 }
 /*FIN PRODUCTOS MEDIANO*/
 /*FIN ESTILO SECCION NUESTROS PRODUCTOS*/
-.economiaP-container section .ramas-container div div, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .economiaP-container section .ramas-container div div, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -910,7 +976,7 @@ footer div p {
 }
 /*FIN ECONOMÍA POPULAR MEDIANO*/
 /*FIN ESTILOS ECONOMÍA POPULAR*/
-.index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div, .economiaP-container section .ramas-container div div {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div, .economiaP-container section .ramas-container div div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1000,7 +1066,7 @@ footer div p {
 }
 /*FIN AMBIENTALISMO POPULAR MEDIANO*/
 /*FIN ESTILOS SECCIÓN AMBIENTALISMO POPULAR*/
-.index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div, .economiaP-container section .ramas-container div div {
+.proxima-entrega-container .entrega-container section, .proxima-entrega-container .entrega-container, .index-cuerpo .titulo-index div, .index-cuerpo .contacto-index .contacto, .noticias-container .novedades-container div div, .economiaP-container section .ramas-container div div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1166,18 +1232,15 @@ footer div p {
   background-size: cover;
   background-position: center;
 }
-.proxima-entrega-container .entrega-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.proxima-entrega-container .entrega-container section {
+  text-align: center;
 }
-.proxima-entrega-container .entrega-container h2 {
+.proxima-entrega-container .entrega-container section h2 {
   margin: 2rem;
   font-size: 3rem;
   text-align: center;
 }
-.proxima-entrega-container .entrega-container p {
+.proxima-entrega-container .entrega-container section p {
   width: 80%;
   margin: 2rem;
   background-color: green;
