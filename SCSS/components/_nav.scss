@@ -11,9 +11,6 @@
 
 
 /*NAV*/
-
-
-
 .navbar {
     position: relative;
     z-index: 1000;
@@ -46,12 +43,25 @@
 
 
 nav.scroll {
-    background: rgb(0,179,71);
-    background: linear-gradient(90deg, rgba(0,179,71,1) 44%, rgba(3,29,11,1) 100%);
+    background: linear-gradient(-45deg, #ee7752, #00b347, #107631, blueviolet);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 /*FIN ESTILOS NAV*/

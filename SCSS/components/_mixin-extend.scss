@@ -1,18 +1,12 @@
 @import '../components/color-list';
 
 
-// UN MAXIN, CONDICION CON MAXIN Y EXTEND PARA APLICAR LO VISTO EN CLASE
-@mixin tarjeta($color, $mr, $br) {
-    flex-basis: 60%;
-    margin: 0 $mr;
-    font-size: 1rem;
-    background-color: $color;
-    border-radius: $br;
-    padding: 2%;
-    transition: transform 1s;
+@mixin margin-tarjeta ($top, $bottom, $right, $left){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    margin-right: $right;
+    margin-left: $left;
 }
-
-// INCLUIDO EN LA SECCIÓN NOTICIAS
 
 %tarjeta-ep {
     flex-basis: 60%;
@@ -24,6 +18,12 @@
     transition: transform 1s;
 }
 
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @mixin condition ($border) {
     border: nth($colores, 2) $border solid;

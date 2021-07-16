@@ -1,6 +1,5 @@
 @import '../components/color-list';
 @import '../components/mixin-extend';
-@import '../components/queries';
 
 /*ESTILOS SECCIÓN ECONOMÍA POPULAR*/
 
@@ -28,76 +27,170 @@
         }
 
         p {
+            background-color: nth($colores, 8);
             width: 80%;
-            text-align: justify;
+            padding: 2rem;
+            border-radius: 1rem;
         }
     }
-
-    .ramas-container {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-
-        h3 {
-            font-size: 3rem;
+    section {
+        .ramas-container {
             display: flex;
-            justify-content: center;
-            margin-top: 2.5rem;
-        }
-
-        div {
-            display: flex;
-            margin: 3% 0;
-            align-items: center;
-
-
+            flex-direction: column;
+            overflow: hidden;
+            h3 {
+                
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                margin-top: 2.5rem;
+            }
+    
+            div {
+                display: flex;
+                flex-direction: row;
+                background-color: nth($colores, 4);
+                border-radius: 1rem;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                @include margin-tarjeta (3%, 3%, auto, 4%);
+                padding: 2%;
 
             &:nth-of-type(even) {
                 flex-direction: row-reverse;
-
-                div {
-                    background-color: nth($colores, 3);
-
-                    div {
-                        background-color: rgba(0, 0, 0, 0);
-                    }
-                }
-
+                background-color: nth($colores, 3);
+                @include margin-tarjeta (3%, 3%, 4%, auto);
             }
-
-            img {
-                width: 200px;
-                height: 200px;
-            }
-
-            div {
-                @extend %tarjeta-ep;
-
-                &:hover {
-                    transform: scale(1.1)
-                }
-
                 div {
-                    flex-direction: column;
+                    @extend%flex-column-center;
                     background-color: rgba(0, 0, 0, 0);
-
-                    p {
-                        text-align: justify;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 4;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
                     h4 {
-                        text-align: center;
+                        font-size: 2rem;
                     }
                 }
-
-
             }
         }
     }
+    
 }
+
+/*INICIO ECONOMÍA POPULAR PEQUEÑO*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .economiaP-container {
+
+        .video-economia-popular-container {
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            iframe {
+                width: 250px;
+                height: 155px;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+        section {
+            .ramas-container {
+                h3 {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+    
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 3% 0;
+                    align-items: center;
+                    &:nth-of-type(even) {
+                        flex-direction: column;
+                    }
+                    img {
+                        width: 12.5rem;
+                        height: 12.5rem;
+                    }
+    
+                    div {
+                        h4 {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+    
+                        p {
+                            overflow: hidden;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*FIN ENCONOMÍA POPULAR PEQUEÑO*/
+
+
+/*INICIO ECONOMÍA POPULAR MEDIANO*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .economiaP-container {
+
+        .video-economia-popular-container {
+            h2 {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+
+        p {
+            text-align: justify;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .ramas-container {
+            h3 {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                margin: 3% 0;
+                align-items: center;
+
+                img {
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+
+                div {
+                    flex-basis: 90%;
+
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*FIN ECONOMÍA POPULAR MEDIANO*/
 
 /*FIN ESTILOS ECONOMÍA POPULAR*/

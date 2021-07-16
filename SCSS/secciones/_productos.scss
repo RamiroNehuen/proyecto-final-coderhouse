@@ -1,5 +1,4 @@
 @import '../components/color-list';
-@import '../components/queries';
 
 /*ESTILOS SECCIÓN NUESTROS PRODUCTOS*/
 
@@ -9,6 +8,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 
     section {
         div {
@@ -21,20 +21,62 @@
             }
         }
 
-        .card {
-            background-color: rgba(0, 0, 0, 0);
-            transition: transform 1s;
+        .productos-precios {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
 
-            &:hover {
-                transform: scale(1.1)
-            }
+            .card {
+                margin: 2%;
+                background-color: rgba(0, 0, 0, 0);
+                transition: transform 1s;
 
-            .card-body {
-                background-color: nth($colores, 4);
+                &:hover {
+                    transform: scale(1.1)
+                }
+    
+                .card-body {
+                    background-color: nth($colores, 4);
+                }
             }
         }
     }
 
 }
+
+/*INICIO PRODUCTOS PEQUEÑO*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .productos-container {
+        div {
+            .text-center {
+                font-size: 2rem;
+            }
+        }
+
+        h5 {
+            text-align: center;
+        }
+    }
+}
+/*FIN PRODUCTOS PEQUEÑO*/
+
+
+/*INICIO PRODUCTOS MEDIANO*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .productos-container {
+        div {
+            .text-center {
+                font-size: 3rem;
+            }
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+    }
+}
+/*FIN PRODUCTOS MEDIANO*/
 
 /*FIN ESTILO SECCION NUESTROS PRODUCTOS*/

@@ -1,5 +1,4 @@
 @import '../components/color-list';
-@import '../components/queries';
 
 /* ESTILOS PROXIMA ENTREGA */
 
@@ -8,11 +7,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center;       
 
     .entrega-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         h2 {
             margin: 2rem;
@@ -22,17 +23,54 @@
 
         p {
             width: 80%;
-            margin: 2rem auto;
+            margin: 2rem;
+            background-color: green;
+            padding: 2rem;
+            border-radius: 1rem;
         }
 
         .formulario {
             background-color: rgba(0, 0, 0, .0);
             margin: auto;
-            display: flex;
-            align-content: center;
             margin-bottom: 1rem;
         }
     }
 }
 
+
+/*INICIO PRÓXIMA ENTREGA PEQUEÑO*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .proxima-entrega-container {
+
+        .entrega-container {
+
+            section {
+                h2 {
+                    font-size: 2rem;
+                }
+                iframe {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+/*FIN PRÓXIMA ENTREGA PEQUEÑO*/
+
+
+/*INICIO PRÓXIMA ENTREGA MEDIANO*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .proxima-entrega-container {
+
+        .entrega-container {
+
+            section {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+/*FIN PROXIMA ENTREGA MEDIANO*/
 /* FIN ESTILOS PROXIMA ENTREGA */

@@ -1,134 +1,202 @@
 @import '../components/color-list';
 @import '../components/mixin-extend';
-@import '../components/queries';
 
 * {
     margin: 0;
     padding: 0;
 }
 
+/*COMIENZO ESTILOS INDEX*/
 
-.colorSolido1 {
-    background: linear-gradient(-45deg, #ee7752, #00b347, #107631, blueviolet);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-    height: 100vh;
+.index-cuerpo {
+    background-image: url(../../img/fondos/fondo-index.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .titulo-index {
+        height: 100vh;
+        div {
+            @extend %flex-column-center;
+            .navbar {
+                .container-fluid {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .navbar-brand {
+                        .logo-pac {
+                            width: 4rem;
+                        }
+                    }
+                }
+            }
+            h2 {
+                margin: 2%;
+                text-align: center;
+            }
+        }
+    }    
+    
+    .definicion-index {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+            width: 80%;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            h2 {
+                margin: 2rem;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            div{
+                p {
+                    margin: 2rem;
+                }
+                .color-parrafo {
+                    background-color: green;
+                }
+            }
+        }
+
+    
+    .productos-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            margin: 1rem;
+        }
+        a {
+            text-decoration: none;
+            h3 {
+                margin: 1rem;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+
+                &:hover,
+                &:focus {
+                    background-size: 100% 2px;
+                    color: nth($colores, 2);
+                }
+            }
+        }
+       
+        .card {
+            background-color: rgba(0, 0, 0, 0);
+            margin: 2%;
+            .card-body {
+                background-color: nth($colores, 4);
+            }
+        }
+        .np-index {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+        }
+    }
+    
+    
+    .contacto-index {
+        .contacto {
+            @extend %flex-column-center;
+        }
+    }
+    
+    .espacio {
+        height: 20vh;
+        background-color: rgba (0, 0, 0, 0);
+    }
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+/*INICIO INDEX PEQUEÑO*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .logo-pac {
+        width: 4rem;
+    }
+    /*Inicio Index pequeño*/
+    .index-cuerpo {
+        overflow-x: hidden;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .definicion-index {
+            overflow-x: hidden;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
-.colorSolido1 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.colorSolido1 div h2 {
-    margin: 2rem;
-}
+        .productos-index {
+            overflow-x: hidden;
+        }
 
-.colorSolido1 .navbar .container-fluid .navbar-brand .logo-pac {
-    width: 4rem;
-}
+        #contacto {
+            .tituloFormulario {
+                font-size: 2rem;
+            }
 
-.colorSolido1 .navbar .container-fluid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+            .formulario-contacto-container {
+                display: flex;
+                flex-direction: column;
 
+                .informacion-contacto {
+                    h4 {
+                        margin: 1rem;
+                    }
 
-.colorSolido2{
-    background-color: #007015;
-    height: 60vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
 
-.colorSolido2 div{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-}
+                        li {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: .7rem;
+            }
+        }
 
-.colorSolido2 div h2,
-.colorSolido2 div p {
-    margin: 2rem;
-    text-align: center;
+        .contacto-index {
+            overflow-x: hidden;
+            iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
 }
-
-.colorSolido2 div h2 {
-    font-size: 4rem;
-}
-
-.color-parrafo {
-    background-color: green;
-}
+/*FIN INDEX PEQUEÑO*/
 
 
-.colorSolido3{
-background-color: #007015;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-color: white;
+/*INICIO INDEX MEDIANO*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
 }
-
-.colorSolido3 h2,
-.colorSolido3 h3 {
-    margin: 4rem;
-}
-
-.colorSolido3 h2 {
-    font-size: 3.5rem;
-}
-
-.colorSolido3 .card {
-    background-color: blueviolet;
-}
-
-.colorSolido4 {
-    background-color: #007015;
-    height: 100vh;
-}
-
-.imgFondo1 {
-background-image: url(../../img/fondos/noticias.jpg);
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-height: 70vh;
-}
-
-.imgFondo2 {
-background-image: url(../../img/fondos/nosotros.jpg);
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-height: 70vh;
-}
-
-.imgFondo3 {
-background-image: url(../../img/fondos/nuestros-productos.jpg);
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-height: 70vh;
-}
+/*FIN INDEX MEDIANO*/
+/*FIN ESTILOS INDEX*/

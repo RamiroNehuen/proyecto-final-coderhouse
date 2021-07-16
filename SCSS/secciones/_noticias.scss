@@ -1,6 +1,5 @@
 @import '../components/color-list';
 @import '../components/mixin-extend';
-@import '../components/queries';
 
 /*ESTILOS SECCION NOTICIAS*/
 .noticias-container {
@@ -15,58 +14,47 @@
         text-align: center;
         font-size: 3rem;
     }
-}
 
-/* Estilos Novedades Generales */
+    .ultimas-novedades {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1rem;
+        padding: 2%;
 
-.novedades-container {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    div {
+        .carousel-item {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10rem;
+            }
+        }
+    }
+    .novedades-container {
         display: flex;
-        margin: 3% 0;
-        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    
+        div{
+            display: flex;
+            @include margin-tarjeta (3%, 3%, auto, 4%);
+            padding: 2%;
+            background-color: nth($colores, 4);
+            border-radius: 1rem;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
 
-
-
-        &:nth-of-type(even) {
-            flex-direction: row-reverse;
-
-            div {
+            &:nth-of-type(even) {
+                flex-direction: row-reverse;
                 background-color: nth($colores, 3);
-
-                div {
-                    background-color: rgba(0, 0, 0, 0);
-                }
+                @include margin-tarjeta (3%, 3%, 4%, auto);
             }
-
-        }
-
-        img {
-            width: 12.5rem;
-            height: 12.5rem;
-        }
-
-        div {
-            @include tarjeta(nth($colores, 4), 3%, 5px);
-
-            &:hover {
-                transform: scale(1.1)
+            img {
+                width: 200px;
+                height: 200px;
             }
-
             div {
-                flex-direction: column;
                 background-color: rgba(0, 0, 0, 0);
-
-                p {
-                    text-align: justify;
-                    #more {
-                        display: none;
-                    }
-                }
-
+                @extend%flex-column-center;
                 button {
                     background: none;
                     color: nth($colores, 2);
@@ -89,17 +77,104 @@
                         color: nth($colores, 2);
                     }
                 }
-
-                h4 {
-                    text-align: center;
-                }
             }
-
-
         }
     }
 }
 
-/* Fin estilos Novedades Generales */
+
+/*INICIO NOTICIAS PEQUEÑO*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.noticias-container {
+
+        h2,
+        h3 {
+            font-size: 2rem;
+        }
+        .novedades-container {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                margin: 3%;
+                align-items: center;
+                text-align: center;
+                &:nth-of-type(even) {
+                    flex-direction: column;
+                }
+                
+                    div {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+    
+                        p {
+                            text-align: justify;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+    } 
+}
+
+/*FIN NOTICIAS PEQUEÑO*/
+
+
+/*INICIO NOTICIAS MEDIANO*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .logo-pac {
+        width: 5rem;
+    }
+
+    .noticias-container {
+
+        h2,
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+    .novedades-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        div {
+            display: flex;
+            margin: 3% 0;
+            align-items: center;
+
+            img {
+                width: 12.5rem;
+                height: 12.5rem;
+            }
+
+            div {
+                flex-basis: 90%;
+
+                div {
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        text-align: justify;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*FIN NOTICIAS MEDIANO*/
 
 /*FIN ESTILOS SECCION NOTICIAS*/

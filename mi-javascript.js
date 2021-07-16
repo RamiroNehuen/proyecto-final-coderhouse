@@ -24,5 +24,3 @@ function myFunction(numero) {
       moreText.style.display = "inline";
     }
   }
-
-
