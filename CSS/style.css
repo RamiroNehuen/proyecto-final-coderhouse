@@ -239,6 +239,7 @@ footer div p {
 }
 .index-cuerpo .definicion-index div p {
   margin: 2rem;
+  text-align: justify;
 }
 .index-cuerpo .definicion-index div .color-parrafo {
   background-color: green;
@@ -472,6 +473,12 @@ footer div p {
 .noticias-container .novedades-container div div {
   background-color: rgba(0, 0, 0, 0);
 }
+.noticias-container .novedades-container div div h4 {
+  text-align: center;
+}
+.noticias-container .novedades-container div div p #more {
+  display: none;
+}
 .noticias-container .novedades-container div div button {
   background: none;
   color: #ffffff;
@@ -556,10 +563,6 @@ footer div p {
   }
   .novedades-container div div div p {
     text-align: justify;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     font-size: 1rem;
   }
 }
@@ -847,6 +850,7 @@ footer div p {
   width: 80%;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: justify;
 }
 .economiaP-container section .ramas-container {
   display: flex;
@@ -858,6 +862,7 @@ footer div p {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
+  text-align: center;
 }
 .economiaP-container section .ramas-container div {
   display: flex;
@@ -872,6 +877,7 @@ footer div p {
   margin-right: auto;
   margin-left: 4%;
   padding: 2%;
+  text-align: center;
 }
 .economiaP-container section .ramas-container div:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -1080,6 +1086,7 @@ footer div p {
   width: 80%;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: justify;
 }
 .economiaP-container section .ramas-container {
   display: flex;
@@ -1091,6 +1098,7 @@ footer div p {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
+  text-align: center;
 }
 .economiaP-container section .ramas-container div {
   display: flex;
@@ -1105,6 +1113,7 @@ footer div p {
   margin-right: auto;
   margin-left: 4%;
   padding: 2%;
+  text-align: center;
 }
 .economiaP-container section .ramas-container div:nth-of-type(even) {
   flex-direction: row-reverse;

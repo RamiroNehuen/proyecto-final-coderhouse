@@ -55,6 +55,14 @@
             div {
                 background-color: rgba(0, 0, 0, 0);
                 @extend%flex-column-center;
+                h4 {
+                    text-align: center;
+                }
+                p {
+                    #more {
+                        display: none;
+                    }
+                }
                 button {
                     background: none;
                     color: nth($colores, 2);
@@ -163,10 +171,6 @@
 
                     p {
                         text-align: justify;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
                         font-size: 1rem;
                     }
                 }
